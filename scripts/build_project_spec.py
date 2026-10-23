@@ -27,24 +27,27 @@ def build(backlog):
                 values.append(value)
         fields.append({"name": name, "record_key": key, "data_type": "SINGLE_SELECT", "options": values})
     workstreams = {epic["id"]: epic["workstream"] for epic in backlog["epics"]}
-    base = ["Title", "Record Type", "Status", "Priority", "Assignees"]
+    # PAPER-DEC-017: visible_fields follows ProjectV2View.fields enumeration.
+    # Physical UI column order is recorded separately in the Project receipt.
+    base = ["Title", "Assignees", "Status", "Priority", "Record Type"]
+    progress = base[:3] + ["Sub-issues progress"] + base[3:]
     def view(name, filter_query, visible, group=None):
         return {"name": name, "layout": "table", "filter": filter_query,
                 "visible_fields": visible, "group_by": [group] if group else [],
                 "vertical_group_by": [], "sort_by": [["Priority", "asc"], ["Title", "asc"]]}
     discovery = workstreams["PAPER-02"].replace('"', '\\"')
     views = [
-        view("Program Overview", "record-type:Program", base + ["Sub-issues progress", "Release Phase", "Acceptance Status"]),
-        view("Epic and Work-Package Hierarchy", 'record-type:Epic,"Work Package"', base + ["Parent issue", "Sub-issues progress", "Workstream", "Readiness"], "Workstream"),
+        view("Program Overview", "record-type:Program", progress + ["Release Phase", "Acceptance Status"]),
+        view("Epic and Work-Package Hierarchy", 'record-type:Epic,"Work Package"', base[:3] + ["Parent issue", "Sub-issues progress"] + base[3:] + ["Readiness", "Workstream"], "Workstream"),
         view("Research Domains", "", base + ["Research Domain", "Publication Type", "Research Method"], "Research Domain"),
-        view("Literature Discovery", f'workstream:"{discovery}"', base + ["Publication Type", "Citation Verification", "Source Rights Status"]),
-        view("Evidence and Reproducibility", "", base + ["Evidence Confidence", "Reproducibility Status", "Research Method"], "Reproducibility Status"),
-        view("Citation Verification", '-citation-verification:"Identity Verified"', base + ["Citation Verification", "Publication Type", "Research Domain"], "Citation Verification"),
+        view("Literature Discovery", f'workstream:"{discovery}"', base + ["Publication Type", "Source Rights Status", "Citation Verification"]),
+        view("Evidence and Reproducibility", "", base + ["Research Method", "Evidence Confidence", "Reproducibility Status"], "Reproducibility Status"),
+        view("Citation Verification", '-citation-verification:"Identity Verified"', base + ["Research Domain", "Publication Type", "Citation Verification"], "Citation Verification"),
         view("Rights and Publication Review", "", base + ["Source Rights Status", "Publication Status", "Acceptance Status"], "Source Rights Status"),
-        view("High-Priority Work", "priority:P0,P1 -status:Done", base + ["Readiness", "Effort", "Dependency Status"]),
-        view("Blocked Dependencies", 'dependency-status:"Prerequisites Open"', base + ["Dependency Status", "Readiness", "Parent issue"], "Dependency Status"),
-        view("Website Publication Readiness", 'release-phase:"Website Handoff"', base + ["Release Phase", "Publication Status", "Source Rights Status", "Citation Verification", "Acceptance Status"]),
-        view("Unassigned Work", "no:assignee -status:Done", base + ["Workstream", "Readiness", "Effort"], "Workstream"),
+        view("High-Priority Work", "priority:P0,P1 -status:Done", base + ["Readiness", "Dependency Status", "Effort"]),
+        view("Blocked Dependencies", 'dependency-status:"Prerequisites Open"', base[:3] + ["Parent issue"] + base[3:] + ["Readiness", "Dependency Status"], "Dependency Status"),
+        view("Website Publication Readiness", 'release-phase:"Website Handoff"', base + ["Source Rights Status", "Citation Verification", "Publication Status", "Release Phase", "Acceptance Status"]),
+        view("Unassigned Work", "no:assignee -status:Done", base + ["Readiness", "Workstream", "Effort"], "Workstream"),
     ]
     return {"schema_version": "0.1.0", "configuration_status": "proposed_not_applied",
         "repository": FULL_NAME, "title": "Pick Your AI — AI Papers & Research Index",

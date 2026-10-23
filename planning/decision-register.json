@@ -593,6 +593,53 @@
       "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
       "accepted_by": null,
       "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-017",
+      "question": "Which observed field enumeration should the existing saved-view API comparator require?",
+      "decision": "Adopt the exact ProjectV2View.fields connection enumeration from the complete Project #9 GraphQL snapshot at 05:50:41 UTC on 2026-10-23 for the specification's visible_fields arrays. The existing verifier queries that connection and remains strict. This enumeration is not authoritative visual column order: the API lists Parent issue fourth in the hierarchy view, while the separately observed UI places it seventh. GitHub documents configuration.visibleFields as the configured order; the current workflow did not query it. Preserve every field set, filter, grouping, sort and table-layout requirement. This comparator baseline neither reorders live views nor overrides UI evidence.",
+      "alternatives": [
+        "Retain the original preferred sequence in the strict API comparator despite the observed enumeration",
+        "Ignore field enumeration order in the verifier"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and Project configuration reviewer",
+      "rationale": "The mission prescribes saved views and fields without fixing their physical column order. The API field connection and configured UI presentation are distinct representations. Recording the actual API enumeration makes the existing exact comparator reproducible, while separately dated UI observations preserve what users see. Field sets and all other configuration checks remain unchanged.",
+      "affects": [
+        "PAPER-19.01",
+        "PAPER-19.02",
+        "PAPER-20.01"
+      ],
+      "evidence": [
+        {
+          "title": "Actual Papers Project #9",
+          "url": "https://github.com/orgs/Pick-Your-AI/projects/9",
+          "relation": "Dated UI and API observations record distinct representations. The complete 05:50:41 UTC GraphQL snapshot supplies the eleven field enumerations used by the comparator; later UI observations are retained separately."
+        },
+        {
+          "title": "Native relationship workflow and Project readback",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39904044419",
+          "relation": "The successful run records table layouts, empty vertical grouping and ProjectV2View.fields identities and enumeration. Exact log/checkpoint digests bind that observation without claiming configuration.visibleFields was queried."
+        },
+        {
+          "title": "GitHub ProjectV2ViewConfiguration documentation",
+          "url": "https://docs.github.com/en/graphql/reference/projects#projectv2viewconfiguration",
+          "relation": "GitHub distinguishes the fields connection from configuration.visibleFields, whose list is explicitly documented as being in configured order."
+        },
+        {
+          "title": "Hierarchy view UI",
+          "url": "https://github.com/orgs/Pick-Your-AI/projects/9/views/2",
+          "relation": "The separately recorded 06:34:41 UTC visual readback places Parent issue seventh. Its actual columns, source digest and capture-time limitation are retained in the Project receipt."
+        },
+        {
+          "title": "Papers program",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/issues/1",
+          "relation": "Created program scope and acceptance boundary; comparator representation does not alter scientific or delivery acceptance."
+        }
+      ],
+      "remaining_gate": "Independent review of the scaffold's latest push and final live readback remain required; this implementation decision is not a GitHub approval or Foundation acceptance.",
+      "accepted_by": null,
+      "acceptance_reference": null
     }
   ]
 }

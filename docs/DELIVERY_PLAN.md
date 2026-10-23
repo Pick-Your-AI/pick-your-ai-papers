@@ -85,7 +85,7 @@ Coverage reports must distinguish discovered candidates, screened records, exclu
 
 ## Decisions and release sequence
 
-The register contains 16 explicit decisions. It records owner roles and remaining gates without inventing an accepting person, source permission or organizational appointment.
+The register contains 17 explicit decisions. It records owner roles and remaining gates without inventing an accepting person, source permission or organizational appointment.
 
 ### Foundation
 

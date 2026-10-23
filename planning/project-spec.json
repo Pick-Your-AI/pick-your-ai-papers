@@ -293,11 +293,11 @@
       "filter": "record-type:Program",
       "visible_fields": [
         "Title",
-        "Record Type",
-        "Status",
-        "Priority",
         "Assignees",
+        "Status",
         "Sub-issues progress",
+        "Priority",
+        "Record Type",
         "Release Phase",
         "Acceptance Status"
       ],
@@ -320,14 +320,14 @@
       "filter": "record-type:Epic,\"Work Package\"",
       "visible_fields": [
         "Title",
-        "Record Type",
-        "Status",
-        "Priority",
         "Assignees",
+        "Status",
         "Parent issue",
         "Sub-issues progress",
-        "Workstream",
-        "Readiness"
+        "Priority",
+        "Record Type",
+        "Readiness",
+        "Workstream"
       ],
       "group_by": [
         "Workstream"
@@ -350,10 +350,10 @@
       "filter": "",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
+        "Record Type",
         "Research Domain",
         "Publication Type",
         "Research Method"
@@ -379,13 +379,13 @@
       "filter": "workstream:\"02 Source discovery\"",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
+        "Record Type",
         "Publication Type",
-        "Citation Verification",
-        "Source Rights Status"
+        "Source Rights Status",
+        "Citation Verification"
       ],
       "group_by": [],
       "vertical_group_by": [],
@@ -406,13 +406,13 @@
       "filter": "",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
+        "Record Type",
+        "Research Method",
         "Evidence Confidence",
-        "Reproducibility Status",
-        "Research Method"
+        "Reproducibility Status"
       ],
       "group_by": [
         "Reproducibility Status"
@@ -435,13 +435,13 @@
       "filter": "-citation-verification:\"Identity Verified\"",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
-        "Citation Verification",
+        "Record Type",
+        "Research Domain",
         "Publication Type",
-        "Research Domain"
+        "Citation Verification"
       ],
       "group_by": [
         "Citation Verification"
@@ -464,10 +464,10 @@
       "filter": "",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
+        "Record Type",
         "Source Rights Status",
         "Publication Status",
         "Acceptance Status"
@@ -493,13 +493,13 @@
       "filter": "priority:P0,P1 -status:Done",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
+        "Record Type",
         "Readiness",
-        "Effort",
-        "Dependency Status"
+        "Dependency Status",
+        "Effort"
       ],
       "group_by": [],
       "vertical_group_by": [],
@@ -520,13 +520,13 @@
       "filter": "dependency-status:\"Prerequisites Open\"",
       "visible_fields": [
         "Title",
-        "Record Type",
-        "Status",
-        "Priority",
         "Assignees",
-        "Dependency Status",
+        "Status",
+        "Parent issue",
+        "Priority",
+        "Record Type",
         "Readiness",
-        "Parent issue"
+        "Dependency Status"
       ],
       "group_by": [
         "Dependency Status"
@@ -549,14 +549,14 @@
       "filter": "release-phase:\"Website Handoff\"",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
-        "Release Phase",
-        "Publication Status",
+        "Record Type",
         "Source Rights Status",
         "Citation Verification",
+        "Publication Status",
+        "Release Phase",
         "Acceptance Status"
       ],
       "group_by": [],
@@ -578,12 +578,12 @@
       "filter": "no:assignee -status:Done",
       "visible_fields": [
         "Title",
-        "Record Type",
+        "Assignees",
         "Status",
         "Priority",
-        "Assignees",
-        "Workstream",
+        "Record Type",
         "Readiness",
+        "Workstream",
         "Effort"
       ],
       "group_by": [

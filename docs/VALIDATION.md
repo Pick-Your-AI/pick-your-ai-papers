@@ -1,25 +1,37 @@
 # Establishment validation and remaining execution
 
-Offline baseline observed on **2026-10-22 at 20:13 UTC**; remote progress audited on **2026-10-23 at 01:15 UTC**. Local validation is not a GitHub Actions run, an independent GitHub approval, a rights clearance or a scientific verification result. After adding bounded native-relationship reconciliation, the full local suite was rerun on 2026-10-23 at 01:20 UTC and passed **130 tests**.
+This checkpoint combines the validated source foundation with remote observations from **2026-10-23**. Each receipt preserves its own observation time. These files cannot predict their own eventual commit SHA: the finalization report, temporary-workflow deletion commit and latest PR checks provide the later exact publication evidence. Local validation, contribution-branch publication, hosted CI, independent GitHub approval, default-branch acceptance and scholarly release are distinct outcomes.
 
 ## Result
 
-The baseline establishment package passed the offline planning and research validators, deterministic generated-file checks and **110 regression tests**. The explicit publication gate fails as intended because every current scholarly proposal remains withheld and unapproved. GitHub access subsequently recovered: the public repository was created and its ID, visibility, default branch and initial commit were read back. Public organization Project #9 has also been created with 17 fields. Sixteen option lists were fully read back, while the final Research Domain list, memberships, saved views and access remain incomplete. Connector writes stalled and both browser paths became unavailable; complete scaffold publication, issue creation and relationship verification are blocked. Later changes require their own validation receipt.
+The source baseline passed the offline planning/research validators, deterministic generated-file checks and **130 regression tests** after the bounded native reconciler was added. The explicit scholarly publication gate rejected all four withheld candidates as intended. These checkpoint documentation and API-enumeration changes require their own exact-revision validation before submission.
 
-| Check | Actual result |
+The later independent audit verified all **85 foundation files** at contribution commit [`dd2de102f81c3d573003795ab8352fda13bafc85`](https://github.com/Pick-Your-AI/pick-your-ai-papers/commit/dd2de102f81c3d573003795ab8352fda13bafc85) and all **165 planning issues**, with exact titles, bodies and stable identities. The program's native parent research #509 is verified. All seventeen Project fields and option lists, and eleven saved views' names, field sets, filters, grouping and sorting have been read back. The later native run and independent checkpoint audit verify all 164 reciprocal parents and 270 blockers. Its complete Project snapshot also verifies all eleven table views, API field enumerations and empty vertical grouping. Physical UI order is separately observed. The later complete item collection independently matches all 165 memberships and 2,805 controlled values, preserving actual native assignees. Access/rules, final-push CI and independent review, merge and default-branch establishment remain separate gates.
+
+The temporary [publisher run](https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39900496348) concluded **failure** after its final issue inventory comparison; it is not reported as a passing validation run. Its prior writes were independently reconciled and all 165 issues were found exact. No cause is asserted for the earlier collection mismatch. Actual resource verification is recorded separately from that workflow conclusion.
+
+| Check | Actual result and scope |
 | --- | --- |
-| `python3 scripts/validate_plan.py` | Passed; hierarchy, schema, dependency DAG, coverage and release consistency |
-| `python3 scripts/validate_research.py` | Passed; 4 proposals, 4 sources, 4 metadata checks, 8 typed edges, 0 experiments, 0 eligible records, 0 published records |
-| `python3 scripts/render_docs.py --check` | Passed; delivery plan and complete backlog match canonical planning |
-| `python3 scripts/build_project_spec.py --check` | Passed; proposed fields/options/views match the canonical plan |
-| `python3 -m unittest discover -s tests -q` | 130 tests passed in the latest combined run |
+| `python3 scripts/validate_plan.py` | Source baseline passed hierarchy, schema, dependency DAG, coverage and release consistency |
+| `python3 scripts/validate_research.py` | Source baseline passed: 4 proposals, 4 sources, 4 metadata checks, 8 typed edges, 0 experiments, 0 eligible records, 0 published records |
+| `python3 scripts/render_docs.py --check` | Source baseline delivery plan and backlog matched canonical planning; checkpoint output must be regenerated and checked |
+| `python3 scripts/build_project_spec.py --check` | Source baseline matched; `PAPER-DEC-017` changes only the eleven API field enumerations used by the comparator and requires a fresh check |
+| `python3 -m unittest discover -s tests -q` | 130 source-baseline tests passed; this is not hosted CI |
 | `python3 scripts/validate_research.py --publication` | Expected rejection, exit code 1; 80 unmet publication-gate messages across 4 withheld candidates |
-| Local Markdown destination audit | No missing local file links |
-| `python3 scripts/bootstrap_github.py` | Offline plan; no live mutations by this CLI; actual browser-created Project is #9 |
-| Complete live CLI bootstrap/API compatibility | Not executed; this run uses authenticated browser and supported connector operations |
-| Actual repository initialization | Read back: repository `1430404173`, public, `main`, initial commit `f5a5084ec255f67b0a1c9e44fcba99098e10216d` |
-| Actual organization Project creation | Public [Project #9](https://github.com/orgs/Pick-Your-AI/projects/9), 17 fields; final configuration not verified |
-| Complete Project/issue/relationship/CI readback | Blocked; latest audit has 0 issues, 0 PRs, 0 rulesets, 0 hosted runs |
+| Exact contribution foundation | 85 of 85 files matched prepared source `42dc48999577c49a4b3a78eb7eef5d5186fc03ed` at observed head `dd2de102f81c3d573003795ab8352fda13bafc85` |
+| Exact native issue contents | 165 of 165 matched; zero missing, duplicate or extra stable IDs at 04:45:58 UTC |
+| External parent | Papers program #1 has native parent research #509 |
+| Project definitions | 17 of 17 requested fields/options verified; 11 of 11 view names/field sets/filters/grouping/sorting verified |
+| Project membership and saved views | All 165 memberships present; eleven table-view API configurations and field enumerations at 05:50:41 UTC. Separate UI observations: Research Domains saved/reloaded at 06:27:50 UTC; hierarchy physical headers recorded at 06:34:41 UTC |
+| Project item values | All 2,805 actual controlled values match; 165 unique expected memberships and native assignees recorded; collection ended `2026-10-23T06:18:07+00:00` |
+| Native internal graph | All 164 reciprocal parents and 270 blockers verified; 434 unique readback-verified attempts, no identity or planned-edge differences |
+| Project access | At 06:29:42 UTC: public, organization base Write, organization owners Admin, one listed CompleteDotTech/Admin collaborator and no listed teams; no access changes |
+| Repository access/rules | Both pages still showed Confirm access at 06:27:50 UTC; zero access grants or rule saves applied by this execution |
+| Workflow files and actual map | Both canonical workflow blobs and the exact issue map verified at `20435598c490c87cb2d6ff8eafaaa89d14620fac`; temporary publisher absent |
+| Native hosted run | [#39904044419](https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39904044419) completed successfully at 05:50:43 UTC; full checkpoint independently audited |
+| Dated PR and observed-head CI | [PR #166](https://github.com/Pick-Your-AI/pick-your-ai-papers/pull/166) was open/draft at the 05:33 UTC observation, head `20435598c490c87cb2d6ff8eafaaa89d14620fac`; [run #39905405514](https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39905405514) passed |
+| Final-push approval, merge and default-branch CI | Pending; the successful earlier PR-head run does not establish these gates |
+| Complete live CLI bootstrap/API compatibility | Not executed; actual Browser, bounded Actions and readback results are recorded separately |
 
 ## Scope counts
 
@@ -36,12 +48,12 @@ The baseline establishment package passed the offline planning and research vali
 | Nested subtasks | 864 |
 | Coverage entries | 102 |
 | Coverage dimensions | 7 |
-| Decision records | 16 |
+| Decision records | 17 |
 | Requested Project fields | 17 |
 | Requested saved views | 11 |
 | Planning and scholarly schemas | 11 |
 
-These are artifact/plan counts. They are not counts of created GitHub issues or scientifically accepted literature. Every planning record remains Backlog, unassigned and Not Accepted. Literature coverage denominators remain unmeasured where no bounded corpus has been enumerated.
+These are planning-scope counts. Separately, the remote issue audit verifies all 165 planned native issue outcomes. The later successful native run separately verifies all 164 internal parents and 270 blockers, with an independent exact-edge checkpoint audit. The canonical planning baseline remains Backlog and Not Accepted, and all 165 native assignees were empty at the recorded issue audit. The separate final actual Project readback verifies all 2,805 controlled values against that baseline. No scientifically accepted catalog is implied; literature denominators remain unmeasured where no bounded corpus has been enumerated.
 
 ## What the tests substantiate
 
@@ -65,12 +77,12 @@ Digest checks detect inconsistent or stale recorded evidence. They are not signa
 
 ## Remaining execution gates
 
-1. Restore authenticated mutation access, then reconcile current resources. Projects #1–#7 overview inspection and target UI observations are recorded; source/target team access still requires verification.
-2. Configure the dedicated Project, create all 165 native planning issues and actual relationships, and populate/read back memberships and views.
-3. Record supported connector mutations and browser configuration separately; repository initialization alone does not satisfy complete setup acceptance.
-4. Stage the complete scaffold PR, obtain the organization's independent approval of the latest push, and merge only through the approved process.
-5. Read back exact default-branch files, successful CI, Project collaborator roles, actual PR approval and merge evidence. Keep Foundation unaccepted until these gates are satisfied.
+1. Preserve the verified Project configuration, native ownership and Project access roles while completing the remaining repository and review gates.
+2. Preserve the verified 164-parent/270-blocker native graph and complete actual edge inventory; include its self-contained identity/edge hashes and hosted-run link in the final receipts.
+3. Complete GitHub's sudo reauthentication for the authorized repository team-access/rules saves, then verify the actual settings. A prepared form is not configuration evidence.
+4. Validate and add the final dated receipts to existing PR #166; read back successful hosted CI after that final push. The earlier run at 20435598 passed.
+5. Obtain the organization's independent GitHub approval of the latest push, merge through the approved process, and verify exact default-branch files, checks and governance. Keep Foundation unaccepted until its complete gates are met.
 
-The original user already authorized administrative setup. Read access remains available, but connector writes did not return and browser control became unavailable. Resumption requires a working connection, not routine approval. The separate independent-review gate comes from the organization's contribution policy and research shared instructions; local agent review does not satisfy it.
+The original mission authorizes administrative setup. The current sensitive-settings blocker is GitHub's sudo reauthentication wall, distinct from routine approval and from the earlier resolved Browser connection problem. The independent-review gate comes from the organization's contribution policy and research shared instructions; local agent review does not satisfy it. No scholarly publication, scientific validity or reproduction is established by issue creation or a passed software check.
 
 See [Project setup](PROJECT_SETUP.md) for precise resource identities, resumable commands, safeguards and API references, and [the actual GitHub receipt](../planning/github-receipt.json) for machine-readable execution progress.
