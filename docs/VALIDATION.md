@@ -8,6 +8,28 @@ The source baseline passed the offline planning/research validators, determinist
 
 The later independent audit verified all **85 foundation files** at contribution commit [`dd2de102f81c3d573003795ab8352fda13bafc85`](https://github.com/Pick-Your-AI/pick-your-ai-papers/commit/dd2de102f81c3d573003795ab8352fda13bafc85) and all **165 planning issues**, with exact titles, bodies and stable identities. The program's native parent research #509 is verified. All seventeen Project fields and option lists, and eleven saved views' names, field sets, filters, grouping and sorting have been read back. The later native run and independent checkpoint audit verify all 164 reciprocal parents and 270 blockers. Its complete Project snapshot also verifies all eleven table views, API field enumerations and empty vertical grouping. Physical UI order is separately observed. The later complete item collection independently matches all 165 memberships and 2,805 controlled values, preserving actual native assignees. Access/rules, final-push CI and independent review, merge and default-branch establishment remain separate gates.
 
+### Graph evidence-binding correction (2026-10-23)
+
+The [PR #166 review](https://github.com/Pick-Your-AI/pick-your-ai-papers/pull/166) found that `validate_research.py` accepted a `metadata_checked` edge supported by any matched check that shared one of its sources. A check of a different revision, or of the same revision without the citation, passed. The reviewer's synthetic `cites` edge was reproduced at `0588c222fd3c787c2f13a8dd391c497cb21b44a5` in both variants: zero errors and nine edges.
+
+The correction requires each such edge to be supported by a check that observed its exact subject, predicate, object and revision. For the rule itself, see [edge evidence binding](../evidence/README.md#content-bound-checks-and-reviews). Checks gain an optional `observed_relations` list, which none of the four real checks populates. All eight seed identity edges still validate unchanged, and no research evidence was added.
+
+Local validation of the correction (Python 3.14; hosted CI uses 3.12):
+
+- All 139 tests passed: the 130 baseline tests plus 9 `EdgeEvidenceBindingReviewTests`.
+- All 16 new assertions fail on the uncorrected validator.
+- The plan, research, render and project-spec checks pass.
+- Publication mode still rejects with the same 80 unmet gates.
+
+Hosted CI on the pushed head is the authoritative result.
+
+At 13:35 UTC, four active repository rulesets and the team grants were applied and read back:
+
+- **Rulesets:** default-branch boundary, branch boundary, tag boundary, and review required. The review ruleset requires one approval, approval of the latest push and the `validate` check, with no bypass.
+- **Team grants:** Maintainers and Research triage, Research Maintainers write, Research Lead Maintainers admin.
+
+These supersede the earlier Confirm access observation. They do not constitute independent approval.
+
 The temporary [publisher run](https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39900496348) concluded **failure** after its final issue inventory comparison; it is not reported as a passing validation run. Its prior writes were independently reconciled and all 165 issues were found exact. No cause is asserted for the earlier collection mismatch. Actual resource verification is recorded separately from that workflow conclusion.
 
 | Check | Actual result and scope |

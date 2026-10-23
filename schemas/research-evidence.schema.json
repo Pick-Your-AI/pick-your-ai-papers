@@ -66,6 +66,36 @@
             },
             "uniqueItems": true
           },
+          "observed_relations": {
+            "description": "Exact graph relationships this check directly observed in its checked revision. A metadata_checked edge other than has_revision/has_manifestation is supported only by a matched check listing its exact subject, predicate and object.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "subject",
+                "predicate",
+                "object"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "subject": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z][a-z0-9_.:-]*$"
+                },
+                "predicate": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "object": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z][a-z0-9_.:-]*$"
+                }
+              }
+            },
+            "uniqueItems": true
+          },
           "scope": {
             "type": "string",
             "minLength": 1

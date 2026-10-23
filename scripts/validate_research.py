@@ -755,6 +755,35 @@ def validate(root: Path, publication=False):
             errors.append(node['id'] + ': node references an unknown record')
         if node['id'] not in expected_nodes and node['external_ref'] is None:
             errors.append(node['id'] + ': extra entity requires pinned external provenance')
+    identity_pointer = {'has_revision': '/revision', 'has_manifestation': '/manifestation'}
+    unobservable = {*identity_pointer, 'supports', 'contradicts', 'reproduces', 'corrects', 'withdraws', 'retracts'}
+    for check in checks.values():
+        checked_record = by_revision.get(check['revision_id'])
+        for relation in check.get('observed_relations', []):
+            if check['kind'] != 'bibliographic_metadata' or relation['predicate'] not in allowed or relation['predicate'] in unobservable:
+                errors.append(check['id'] + ': check cannot directly observe relation predicate ' + relation['predicate'])
+            elif not checked_record or relation['subject'] not in (check['revision_id'], checked_record['record_id']):
+                errors.append(check['id'] + ': observed relation subject is outside the checked revision')
+
+    def check_observes_edge(check, edge):
+        """Bind a metadata check to the exact subject, predicate, object and revision it observed.
+
+        A shared source or revision is insufficient: identity edges need the checked revision's
+        own identity observation, and other edges need the exact triple in observed_relations.
+        """
+        if not check or check['status'] != 'matched' or check['kind'] != 'bibliographic_metadata' or check['source_id'] not in edge['source_refs']:
+            return False
+        if edge['predicate'] in identity_pointer:
+            record = by_id.get(edge['subject'])
+            target = record and record['revision' if edge['predicate'] == 'has_revision' else 'manifestation']['id']
+            return (bool(record) and check['revision_id'] == record['revision']['id'] and edge['object'] == target
+                    and identity_pointer[edge['predicate']] in check['observations'])
+        checked_record = by_revision.get(check['revision_id'])
+        triple = {'subject': edge['subject'], 'predicate': edge['predicate'], 'object': edge['object']}
+        return (bool(checked_record) and check['source_id'] in checked_record['source_refs']
+                and edge['subject'] in (check['revision_id'], checked_record['record_id'])
+                and triple in check.get('observed_relations', []))
+
     seen_edges = set()
     for edge in graph['edges']:
         require_refs(edge['source_refs'], sources, edge['id'])
@@ -767,8 +796,11 @@ def validate(root: Path, publication=False):
         kinds = allowed[edge['predicate']]
         if nodes.get(edge['subject'], {}).get('kind') not in kinds[0] or nodes.get(edge['object'], {}).get('kind') not in kinds[1]:
             errors.append(edge['id'] + ': graph predicate has invalid or unresolved endpoint types')
-        if edge['assertion_level'] == 'metadata_checked' and not any(checks.get(c, {}).get('status') == 'matched' and checks[c]['source_id'] in edge['source_refs'] for c in edge['check_ids']):
-            errors.append(edge['id'] + ': metadata edge lacks a matching source check')
+        if edge['assertion_level'] == 'metadata_checked' and not any(check_observes_edge(checks.get(c), edge) for c in edge['check_ids']):
+            if edge['predicate'] in identity_pointer:
+                errors.append(edge['id'] + ': identity edge check belongs to another revision or did not observe this identity')
+            else:
+                errors.append(edge['id'] + ': metadata edge lacks a check that directly observed its exact subject, predicate and object')
         if edge['predicate'] in ('supports', 'contradicts', 'reproduces'):
             review_kind = 'reproduction' if edge['predicate'] == 'reproduces' else 'scientific'
             if edge['assertion_level'] != 'reviewed' or not any(accepted_review(r, review_kind, edge['id']) for r in edge['review_ids']):
@@ -794,8 +826,6 @@ def validate(root: Path, publication=False):
                 errors.append(edge['id'] + ': identity edge binds the wrong scholarly object')
             if record and not set(edge['source_refs']) <= set(record['source_refs']):
                 errors.append(edge['id'] + ': identity edge uses a source for another record')
-            if record and edge['assertion_level'] == 'metadata_checked' and not any(checks.get(c, {}).get('revision_id') == record['revision']['id'] and checks[c]['source_id'] in edge['source_refs'] and checks[c]['status'] == 'matched' for c in edge['check_ids']):
-                errors.append(edge['id'] + ': identity edge check belongs to another revision')
         if edge['assertion_level'] == 'reviewed' and edge['predicate'] not in ('corrects', 'withdraws', 'retracts'):
             if not any(accepted_review(r, reviews.get(r, {}).get('kind'), edge['id']) for r in edge['review_ids']):
                 errors.append(edge['id'] + ': reviewed edge lacks an independent accepted review')
