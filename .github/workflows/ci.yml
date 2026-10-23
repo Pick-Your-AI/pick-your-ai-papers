@@ -1,0 +1,39 @@
+name: Papers validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: papers-validation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out reviewed source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4; organization research workflow pin
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5; organization research workflow pin
+        with:
+          python-version: '3.12'
+      - name: Validate planning
+        run: python3 scripts/validate_plan.py
+      - name: Validate research proposals
+        run: python3 scripts/validate_research.py
+      - name: Check generated documentation
+        run: python3 scripts/render_docs.py --check
+      - name: Check proposed Project specification
+        run: python3 scripts/build_project_spec.py --check
+      - name: Run regression tests
+        run: python3 -m unittest discover -s tests -v
