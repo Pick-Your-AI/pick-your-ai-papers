@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.1.0",
+  "inspected_on": "2026-10-22",
+  "time_zone": "America/New_York",
+  "method": "Read 15 selected research files and 3 website files; compare actual blob SHAs with each observed default-branch commit tree. Extract explicit arXiv URLs from the selected research files and deduplicate their work identifiers.",
+  "research_commit": "da3d320e239a6d37a933963230f2eb3643d1d5c4",
+  "website_commit": "f47f3ebaeb599d49ccd58eaf29994890d9f54d55",
+  "sampled_research_file_count": 15,
+  "sampled_website_file_count": 3,
+  "distinct_arxiv_work_ids_in_sample": 61,
+  "observed_counts": {
+    "t1_candidates": 248,
+    "t1_task_tags": 55,
+    "t1_source_groups": 189,
+    "market_competitors": 39,
+    "market_sources": 58,
+    "market_cells": 1872,
+    "market_documented": 121,
+    "market_unknown": 1751
+  },
+  "files": [
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T1-model-selection/model-research-inventory.json",
+      "blob_sha": "90212b0a3372d677dd74e65e2bc898ae910c5fe9",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T1-model-selection/model-research-inventory.json"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T1-model-selection/model-research-sources.json",
+      "blob_sha": "ad56ee107a5806375b3c2045e6388d9dbaf90090",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T1-model-selection/model-research-sources.json"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T1-model-selection/citation-audit-2026-10-17.md",
+      "blob_sha": "00f548b0b77a9ec709acebe225c8fc96e8038ed5",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T1-model-selection/citation-audit-2026-10-17.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T1-model-selection/model-taxonomy.md",
+      "blob_sha": "78793d4891324a9a8fded6d11878b5d604ea2fab",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T1-model-selection/model-taxonomy.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T5-training-fine-tuning/training-dataset.md",
+      "blob_sha": "e6dd525b93f8df00c441050f5237c2eb257cc5fe",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T5-training-fine-tuning/training-dataset.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T5-training-fine-tuning/fine-tuned-model.md",
+      "blob_sha": "35d4996218949384d2e1bc9626aa80ae8ea07126",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T5-training-fine-tuning/fine-tuned-model.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T6-deployment-operations/evaluation.md",
+      "blob_sha": "edf903ea15280cff40766c9110a54d6823fb0057",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T6-deployment-operations/evaluation.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/T6-deployment-operations/evaluation-catalog-qualification.md",
+      "blob_sha": "b37dbc6af57e2585c52e93f976f60a8a09c5f5af",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/T6-deployment-operations/evaluation-catalog-qualification.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/market/citation-index-2026-10-17.md",
+      "blob_sha": "1e3ca02ae8247e3c7baf188b6aa6519f413eaab4",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/market/citation-index-2026-10-17.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/market/sources.json",
+      "blob_sha": "b151438ded6b84db23cccd70ced9182464748134",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/market/sources.json"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/market/competitors.json",
+      "blob_sha": "9e326f5d4c0fccb028a650d99088f6c3763678b3",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/market/competitors.json"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/market/features.json",
+      "blob_sha": "e9f07772223b2da3cb7b3cff77c56e50abbacd16",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/market/features.json"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "research/market/benchmark-validation.md",
+      "blob_sha": "fa2c7e45ee999f7051580b01ccf83e0e9ed2b079",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/research/market/benchmark-validation.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "docs/PUBLICATION_ELIGIBILITY_HANDOFF.md",
+      "blob_sha": "7d3cab3ae8a24448c68f6fc0c93b9b78f5199e90",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/docs/PUBLICATION_ELIGIBILITY_HANDOFF.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "path": "docs/CONTRACT_MAPPING.md",
+      "blob_sha": "23487e48f9f3e19be4a990756ed193b6a586ecfa",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/da3d320e239a6d37a933963230f2eb3643d1d5c4/docs/CONTRACT_MAPPING.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-website",
+      "path": "docs/DATA_INTEGRATION.md",
+      "blob_sha": "1a6f0a5bf64951de2be9be7110d053dc3833e51b",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-website/blob/f47f3ebaeb599d49ccd58eaf29994890d9f54d55/docs/DATA_INTEGRATION.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-website",
+      "path": "docs/RESEARCH_MAPPING.md",
+      "blob_sha": "211b5e39c6e6878812f4db39d9e50850c7ea35cb",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-website/blob/f47f3ebaeb599d49ccd58eaf29994890d9f54d55/docs/RESEARCH_MAPPING.md"
+    },
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-website",
+      "path": "README.md",
+      "blob_sha": "943e1155fc3d59a14fc7b2ef380fc7f23fe3e1a8",
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-website/blob/f47f3ebaeb599d49ccd58eaf29994890d9f54d55/README.md"
+    }
+  ],
+  "limitations": [
+    "Bounded sample only; not all organization references, not an exhaustive search.",
+    "ArXiv extraction excludes bare textual IDs and all non-arXiv scholarship.",
+    "Existing source grades and scientific claims were not independently reproduced.",
+    "File identity and citation checking do not establish source-use permission."
+  ]
+}

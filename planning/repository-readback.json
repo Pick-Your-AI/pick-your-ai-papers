@@ -1,0 +1,395 @@
+{
+  "schema_version": "papers-repository-readback/v1",
+  "receipt_written_at": "2026-10-23T06:39:13.272139Z",
+  "snapshot_complete": false,
+  "repository": {
+    "url": "https://api.github.com/repos/Pick-Your-AI/pick-your-ai-papers",
+    "id": 1430404173,
+    "full_name": "Pick-Your-AI/pick-your-ai-papers",
+    "visibility": "public",
+    "default_branch": "main",
+    "description": "Source-linked AI literature, methods, authors, labs, scholarly evidence and reproducibility planning for Pick Your AI."
+  },
+  "repository_metadata_observed_at": "2026-10-23 01:15:13 UTC",
+  "default_branch": {
+    "name": "main",
+    "last_observed_head": "f5a5084ec255f67b0a1c9e44fcba99098e10216d",
+    "observed_at": "2026-10-23 01:15:13 UTC",
+    "observation_scope": "Historical README initialization, not a final scaffold or current-head audit",
+    "final_head_readback_pending": true
+  },
+  "contribution_branch": {
+    "name": "contrib/papers-bootstrap/foundation",
+    "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/tree/contrib/papers-bootstrap/foundation",
+    "foundation_head": "dd2de102f81c3d573003795ab8352fda13bafc85",
+    "foundation_checked_at": "2026-10-23T04:40:47.957Z",
+    "foundation_tree": "f96d88cf3d1a5700ff02f62c01e35048a0e76930",
+    "prepared_source_commit": "42dc48999577c49a4b3a78eb7eef5d5186fc03ed",
+    "foundation_file_count": 85,
+    "exact_foundation_files_verified": 85,
+    "head_after_workflow_uploads": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+    "final_head_readback_pending": true,
+    "observed_head": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+    "observed_tree": "e9a610b8b6528c63cf89101c2f727eaccfd0ebeb",
+    "observed_at": "2026-10-23T05:08:46.707Z",
+    "observed_blob_count": 88,
+    "prepublication_head_readback": {
+      "schema_version": "papers-finalization-head-recheck/v1",
+      "checked_at": "2026-10-23T06:26:20Z",
+      "method": "Independent read-only GitHub connector GET of the exact contribution ref; the unchanged commit pins the previously verified immutable tree.",
+      "url": "https://api.github.com/repos/Pick-Your-AI/pick-your-ai-papers/git/ref/heads/contrib/papers-bootstrap/foundation",
+      "repository": "Pick-Your-AI/pick-your-ai-papers",
+      "branch": "contrib/papers-bootstrap/foundation",
+      "ref": "refs/heads/contrib/papers-bootstrap/foundation",
+      "head": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+      "unchanged_from_complete_base_observation": true,
+      "tree_sha": "e9a610b8b6528c63cf89101c2f727eaccfd0ebeb"
+    }
+  },
+  "workflow_file_updates": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "reported_commit_prefix": "642fc4e",
+      "source": "Authenticated Browser commit reported by execution owner",
+      "execution_result": "Not yet verified",
+      "actual_blob_sha": "64b7fe48ee319d2fb7e52c522a6c604019e6a409",
+      "verified_at_head": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+      "checked_at": "2026-10-23T05:08:46.707Z"
+    },
+    {
+      "path": ".github/workflows/reconcile-native-relations.yml",
+      "reported_commit_prefix": "d135d3f",
+      "source": "Authenticated Browser commit reported by execution owner",
+      "execution_result": "Not yet verified",
+      "actual_blob_sha": "8316c3177d507117953302f316cb756d57ebbf00",
+      "verified_at_head": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+      "checked_at": "2026-10-23T05:08:46.707Z"
+    },
+    {
+      "path": ".github/workflows/papers-bootstrap-publish.yml",
+      "reported_state": "Removed after issue publication",
+      "source": "Authenticated Browser deletion reported by execution owner",
+      "absence_verified_at_head": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+      "checked_at": "2026-10-23T05:08:46.707Z",
+      "deletion_commit_sha": null
+    }
+  ],
+  "issues": {
+    "checked_at": "2026-10-23T04:45:58.703Z",
+    "expected_count": 165,
+    "observed_count": 165,
+    "exact_scope_and_body_matches": 165,
+    "missing_stable_ids": [],
+    "duplicate_stable_ids": [],
+    "unplanned_stable_ids": [],
+    "identities_receipt": "planning/github-receipt.json",
+    "all_native_assignees_empty_at_observation": true,
+    "program": {
+      "id": 5991897179,
+      "node_id": "I_kwDOVUI8Tc8AAAABZSUYWw",
+      "number": 1,
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/issues/1"
+    }
+  },
+  "external_program_parent": {
+    "verified": true,
+    "child": "https://github.com/Pick-Your-AI/pick-your-ai-papers/issues/1",
+    "parent": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+    "checked_at": "2026-10-23T04:45:58.703Z",
+    "source_field": "parent_issue_url"
+  },
+  "native_relationships": {
+    "expected_internal_parents": 164,
+    "expected_blockers": 270,
+    "complete_readback": true,
+    "state": "Verified in the successful hosted run and independent exact-edge checkpoint audit",
+    "run": {
+      "id": 39904044419,
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+      "html_url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39904044419",
+      "checkpoint_completed_at": "2026-10-23T05:50:41+00:00",
+      "job_completed_at": "2026-10-23T05:50:43Z"
+    },
+    "checked_at": "2026-10-23T05:50:41+00:00",
+    "internal_parents": 164,
+    "blockers": 270,
+    "run_url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39904044419",
+    "source": {
+      "repository": "Pick-Your-AI/pick-your-ai-papers",
+      "repository_id": 1430404173,
+      "run_id": 39904044419,
+      "run_url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39904044419",
+      "run_status": "completed",
+      "run_conclusion": "success",
+      "run_head_sha": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+      "job_id": 120251799417,
+      "job_completed_at": "2026-10-23T05:50:43Z",
+      "checkpoint_completed_at": "2026-10-23T05:50:41+00:00",
+      "project_observed_at": "2026-10-23T05:50:41+00:00",
+      "backlog_sha256": "f16bc8c1190a34ef85827750b8a776569ce0d79db174f8c5db45e5d7ad99bb20",
+      "issue_map_sha256": "cc74e91a37892afce08a04270f8ddc665a3cb0f899ea84d3c4c60fd6d7b2a930",
+      "log_integrity": {
+        "source_tool": "github_fetch_workflow_job_logs",
+        "repository": "Pick-Your-AI/pick-your-ai-papers",
+        "job_id": 120251799417,
+        "run_id": 39904044419,
+        "decoded_connector_log_text_sha256": "1b82f059eb917983bc36b35af4454df626d1a1e8eaac7462a6a4a09c0a6bb9f7",
+        "decoded_connector_log_text_bytes": 783279,
+        "exact_checkpoint_json_text_sha256": "5037f7951cf21db8dbb6d9b2057d59d8fb6512e1fbb6bb972e8f5d79fb4a8176",
+        "exact_checkpoint_json_text_bytes": 760756,
+        "parsed_checkpoint_file_sha256": "f603da9918a30d5506e2c24abd2a4a62651fd67f91cf405e73f933d8ea46b6ec",
+        "checkpoint_equals_log_payload": true,
+        "hash_scope": "SHA-256 of exact UTF-8 text returned by the connector and of the exact JSON text after the checkpoint marker, respectively; not a ZIP/archive-byte digest."
+      }
+    },
+    "digests": {
+      "identities": {
+        "count": 165,
+        "sha256": "c45600d9067861e3c130063a44bcd5aa7f14b82744633c8f79f46cb288d94461"
+      },
+      "internal_parents": {
+        "count": 164,
+        "edge_tuple_order": [
+          "child_stable_id",
+          "parent_stable_id"
+        ],
+        "sha256": "7ec54853d5d7bb93d76284c90c350b224394d356e36f954619e085fada59f3f2",
+        "reciprocal_child_edges_have_same_digest": true
+      },
+      "blockers": {
+        "count": 270,
+        "edge_tuple_order": [
+          "dependent_stable_id",
+          "prerequisite_stable_id"
+        ],
+        "sha256": "c390784f2719159397586f242cc4148ceab08ea3718d39465f2d53d4bb054aa3"
+      }
+    },
+    "digest_encoding": "UTF-8 of JSON with recursively sorted object keys, no insignificant whitespace, ensure_ascii=false, and no trailing newline. Identities sorted by stable_id; edge tuples lexicographically sorted; view objects sorted by actual number.",
+    "self_contained_edge_receipt": "planning/github-receipt.json#/native_verification_evidence"
+  },
+  "publication_run": {
+    "id": 39900496348,
+    "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39900496348",
+    "status": "completed",
+    "conclusion": "failure",
+    "head_sha": "f6c795bce505ca8090cfa99597b194893a934954",
+    "updated_at": "2026-10-23T04:44:49Z",
+    "result_scope": "85 foundation files committed to the contribution branch and 165 issues individually verified; the final inventory comparison failed before issue-map publication.",
+    "error": "Final stable issue inventory differs from the declared backlog",
+    "independent_later_issue_inventory": {
+      "checked_at": "2026-10-23T04:45:58.703Z",
+      "expected": 165,
+      "matched": 165,
+      "missing": 0,
+      "duplicate_stable_ids": 0,
+      "extra_stable_ids": 0
+    },
+    "cause_of_final_inventory_mismatch": "Not established; no blind retry was used to infer success."
+  },
+  "pull_request": {
+    "number": 166,
+    "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/pull/166",
+    "state": "open",
+    "draft": true,
+    "head_sha": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+    "base_sha": "f5a5084ec255f67b0a1c9e44fcba99098e10216d",
+    "merged": false,
+    "checked_at": "2026-10-23 05:33:03 UTC",
+    "source": "https://api.github.com/repos/Pick-Your-AI/pick-your-ai-papers/pulls/166",
+    "latest_push_independent_approval_verified": false
+  },
+  "rulesets": {
+    "complete_readback": false,
+    "save_state": "Blocked by GitHub sudo reauthentication; a prepared form is not a saved rule",
+    "last_observed_at": "2026-10-23T06:27:50Z"
+  },
+  "team_access": {
+    "complete_readback": false,
+    "save_state": "Blocked by GitHub sudo reauthentication; no individual or team-membership grants made",
+    "last_observed_at": "2026-10-23T06:27:50Z"
+  },
+  "hosted_ci": {
+    "workflow_file_uploaded": true,
+    "success_at_final_head_verified": false,
+    "observed_contribution_run": {
+      "id": 39905405514,
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39905405514",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+      "event": "pull_request",
+      "updated_at": "2026-10-23T05:22:50Z",
+      "checked_at": "2026-10-23 05:33:03 UTC",
+      "source": "https://api.github.com/repos/Pick-Your-AI/pick-your-ai-papers/actions/runs/39905405514"
+    },
+    "success_at_observed_contribution_head_verified": true
+  },
+  "limitations": [
+    "This combines dated observations; the receipt-written timestamp does not imply that all remote resources were read simultaneously.",
+    "Workflow upload, a contribution-branch commit and issue creation do not establish successful CI, independent approval, merge or Foundation acceptance.",
+    "No scientific catalog publication or independent experiment is claimed."
+  ],
+  "issue_map": {
+    "path": "planning/issue-map.json",
+    "checked_at": "2026-10-23T05:08:46.707Z",
+    "head": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+    "blob_sha": "873274b2f2185703e7a00b29f8b972576797f700",
+    "bytes": 37571,
+    "backlog_sha256": "f16bc8c1190a34ef85827750b8a776569ce0d79db174f8c5db45e5d7ad99bb20",
+    "exact_bytes_verified": true,
+    "semantic_match_to_independent_verified_map": true
+  },
+  "project_membership_repair": {
+    "complete_pre_repair_inventory": {
+      "checked_at": "2026-10-23T05:19:53+00:00",
+      "active_expected_items": 165,
+      "status_only_unassigned_candidates": 142,
+      "preserved_items": 23
+    },
+    "repair_observation": {
+      "checked_at": "2026-10-23T05:24:05+00:00",
+      "active_items": 23,
+      "status_only_candidates_absent": 142,
+      "preserved_item_ids_values_and_assignees_unchanged": true
+    },
+    "repair_state": "Membership re-addition and final canonical field assignment are complete and independently read back; 142 new item identities and all 23 preserved identities remain recorded in the dated history.",
+    "current_complete_readback": true,
+    "post_readdition": {
+      "checked_at": "2026-10-23T05:41:43+00:00",
+      "active_expected_items": 165,
+      "new_item_ids": 142,
+      "preserved_item_ids": 23,
+      "unexpected_values": 0
+    },
+    "final_field_assignment": {
+      "checked_at": "2026-10-23T06:18:07+00:00",
+      "controlled_values_verified": 2805,
+      "field_differences": 0,
+      "item_records_sha256": "f8b0d4c0776bbfe69d3ae600a30321094b030b03f8ae555c288ed34b60225192"
+    }
+  },
+  "native_run_completed": {
+    "repository": "Pick-Your-AI/pick-your-ai-papers",
+    "repository_id": 1430404173,
+    "run_id": 39904044419,
+    "run_url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39904044419",
+    "run_status": "completed",
+    "run_conclusion": "success",
+    "run_head_sha": "20435598c490c87cb2d6ff8eafaaa89d14620fac",
+    "job_id": 120251799417,
+    "job_completed_at": "2026-10-23T05:50:43Z",
+    "checkpoint_completed_at": "2026-10-23T05:50:41+00:00",
+    "project_observed_at": "2026-10-23T05:50:41+00:00",
+    "backlog_sha256": "f16bc8c1190a34ef85827750b8a776569ce0d79db174f8c5db45e5d7ad99bb20",
+    "issue_map_sha256": "cc74e91a37892afce08a04270f8ddc665a3cb0f899ea84d3c4c60fd6d7b2a930",
+    "log_integrity": {
+      "source_tool": "github_fetch_workflow_job_logs",
+      "repository": "Pick-Your-AI/pick-your-ai-papers",
+      "job_id": 120251799417,
+      "run_id": 39904044419,
+      "decoded_connector_log_text_sha256": "1b82f059eb917983bc36b35af4454df626d1a1e8eaac7462a6a4a09c0a6bb9f7",
+      "decoded_connector_log_text_bytes": 783279,
+      "exact_checkpoint_json_text_sha256": "5037f7951cf21db8dbb6d9b2057d59d8fb6512e1fbb6bb972e8f5d79fb4a8176",
+      "exact_checkpoint_json_text_bytes": 760756,
+      "parsed_checkpoint_file_sha256": "f603da9918a30d5506e2c24abd2a4a62651fd67f91cf405e73f933d8ea46b6ec",
+      "checkpoint_equals_log_payload": true,
+      "hash_scope": "SHA-256 of exact UTF-8 text returned by the connector and of the exact JSON text after the checkpoint marker, respectively; not a ZIP/archive-byte digest."
+    }
+  },
+  "project_item_readback": {
+    "schema_version": "papers-exact-project-items/v1",
+    "repository": "Pick-Your-AI/pick-your-ai-papers",
+    "repository_id": 1430404173,
+    "project_number": 9,
+    "project_node_id": "PVT_kwDOFHg4Xc4BoUHz",
+    "project_url": "https://github.com/orgs/Pick-Your-AI/projects/9",
+    "method": "Complete bounded unauthenticated public REST item collection; actual content identities and native Assignees checked; every actual controlled option ID/name compared against the canonical backlog and independently observed field definitions.",
+    "observation_started_at": "2026-10-23T06:17:59+00:00",
+    "observation_finished_at": "2026-10-23T06:18:07+00:00",
+    "collection_pages": [
+      {
+        "url": "https://api.github.com/orgs/Pick-Your-AI/projectsV2/9/items?per_page=100&fields=431279696%2C431279697%2C431279705%2C431279707%2C431279698%2C431282180%2C431282271%2C431282364%2C431282812%2C431282914%2C431283170%2C431283901%2C431284118%2C431284424%2C431284490%2C431284700%2C431284836%2C431284932%2C431285003%2C431285122%2C431285171",
+        "checked_at": "2026-10-23T06:18:04+00:00",
+        "count": 100,
+        "link": "<https://api.github.com/organizations/343423069/projectsV2/9/items?per_page=100&fields=431279696%2C431279697%2C431279705%2C431279707%2C431279698%2C431282180%2C431282271%2C431282364%2C431282812%2C431282914%2C431283170%2C431283901%2C431284118%2C431284424%2C431284490%2C431284700%2C431284836%2C431284932%2C431285003%2C431285122%2C431285171&after=Y3Vyc29yOnYyOpK5MDAwMDAwMDAuMDA0MTMyMjMxNDA0OTU4Ns4Qugn8>; rel=\"next\"",
+        "rate_remaining": "56",
+        "rate_reset": "1792736392",
+        "response_sha256": "9f7e1c7c68eaaf5bde34fae9005b4c7469fd0bc9a25c910d72da36e7e4fc243e"
+      },
+      {
+        "url": "https://api.github.com/organizations/343423069/projectsV2/9/items?per_page=100&fields=431279696%2C431279697%2C431279705%2C431279707%2C431279698%2C431282180%2C431282271%2C431282364%2C431282812%2C431282914%2C431283170%2C431283901%2C431284118%2C431284424%2C431284490%2C431284700%2C431284836%2C431284932%2C431285003%2C431285122%2C431285171&after=Y3Vyc29yOnYyOpK5MDAwMDAwMDAuMDA0MTMyMjMxNDA0OTU4Ns4Qugn8",
+        "checked_at": "2026-10-23T06:18:07+00:00",
+        "count": 65,
+        "link": "<https://api.github.com/organizations/343423069/projectsV2/9/items?per_page=100&fields=431279696%2C431279697%2C431279705%2C431279707%2C431279698%2C431282180%2C431282271%2C431282364%2C431282812%2C431282914%2C431283170%2C431283901%2C431284118%2C431284424%2C431284490%2C431284700%2C431284836%2C431284932%2C431285003%2C431285122%2C431285171&before=Y3Vyc29yOnYyOpK5MDAwMDAwMDAuMDA0MTE1MjI2MzM3NDQ4Nc4QugoI>; rel=\"prev\"",
+        "rate_remaining": "59",
+        "rate_reset": "1792739884",
+        "response_sha256": "0a8404bd76c437636e35c1d5685263084cad8b5379ab81be0e98fba47c31118f"
+      }
+    ],
+    "field_definitions_observed_at": "2026-10-23T04:45:30.723007+00:00",
+    "field_definitions_source": "https://api.github.com/orgs/Pick-Your-AI/projectsV2/9/fields?per_page=100",
+    "backlog_sha256": "f16bc8c1190a34ef85827750b8a776569ce0d79db174f8c5db45e5d7ad99bb20",
+    "counts": {
+      "active_expected_memberships": 165,
+      "controlled_fields": 17,
+      "controlled_values_verified": 2805,
+      "missing": 0,
+      "duplicate": 0,
+      "unexpected": 0,
+      "field_differences": 0,
+      "issues_with_native_assignees": 0
+    },
+    "all_expected_values_match": true,
+    "item_records_sha256": "f8b0d4c0776bbfe69d3ae600a30321094b030b03f8ae555c288ed34b60225192",
+    "controlled_field_definitions_sha256": "8b09b8bad7a13ff0de407dc06a2af1c1a292e6d79db33e75a5bb5dd5991e8e21",
+    "digest_encoding": "UTF-8 JSON with recursively sorted object keys, separators comma and colon, ensure_ascii=false, no terminal newline; item rows sorted by stable_id.",
+    "limitations": [
+      "Two-page observations are not an atomic server transaction; preserve the start/end and per-page timestamps.",
+      "Planning values and ownership are observed, never written or inferred from defaults.",
+      "This receipt does not establish collaborator roles, team access, repository rules, independent PR approval, scientific acceptance or publication permission."
+    ],
+    "source_snapshot_sha256": "66a71b44b24da223744209dee14dfdb5f08cc10bf78cfe142c6be10f6dadabb3",
+    "self_contained_item_receipt": "planning/project-ui-readback.json#/item_value_evidence"
+  },
+  "latest_repository_gate_observation": {
+    "observed_at": "2026-10-23T06:27:50Z",
+    "method": "Authenticated GitHub UI; reload after explicit Save display options confirmation",
+    "repository_access": {
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/settings/access",
+      "observed_heading": "Confirm access",
+      "save_confirmed": false
+    },
+    "repository_rules": {
+      "url": "https://github.com/Pick-Your-AI/pick-your-ai-papers/settings/rules/new",
+      "observed_heading": "Confirm access",
+      "save_confirmed": false
+    },
+    "source_artifact_sha256": "55cb155bd874c5af41f39b8ac75ffd5db53a958eef37bf222335ff7d4938bc20",
+    "grant_and_rule_changes_applied_by_this_execution": 0,
+    "scope": "GitHub's sensitive-action confirmation gate remains present. No access grant or rule save was completed; existing/inherited collaborator roles and repository rules are not inferred from this screen."
+  },
+  "receipt_phase": "Dated observations prepared before this receipt packet's own publication; later commit/CI/review evidence belongs to its finalization run and existing PR.",
+  "project_access_readback": {
+    "schema_version": "papers-project-access-ui/v1",
+    "observed_at": "2026-10-23T06:29:42Z",
+    "url": "https://github.com/orgs/Pick-Your-AI/projects/9/settings/access",
+    "scope": "All currently listed project collaborators, with empty search and no Type/Role filter; no repository-team inventory implied; base Write applies to organization members, not the unauthenticated public.",
+    "visibility": "public",
+    "base_role": "WRITE",
+    "organization_owners_role": "ADMIN",
+    "collaborators": [
+      {
+        "login": "CompleteDotTech",
+        "role": "ADMIN",
+        "type": "User"
+      }
+    ],
+    "displayed_member_count": 1,
+    "explicit_teams_listed": [],
+    "changes_made": false,
+    "source_artifact_sha256": "357069666a4b82f60e8840ca43bb7c2d2010c9e40e327525bf71a0dba7cbea50"
+  }
+}

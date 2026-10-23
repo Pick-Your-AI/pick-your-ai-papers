@@ -1,0 +1,194 @@
+{
+  "schema_version": "0.1.0",
+  "record_id": "paper.arxiv.2104.08663",
+  "work": {
+    "id": "paper.arxiv.2104.08663",
+    "title": "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+    "identifiers": [
+      {
+        "scheme": "arxiv",
+        "value": "2104.08663",
+        "scope": "work"
+      },
+      {
+        "scheme": "doi",
+        "value": "10.48550/arxiv.2104.08663",
+        "scope": "work"
+      }
+    ],
+    "aliases": []
+  },
+  "manifestation": {
+    "id": "manifestation.arxiv.2104.08663",
+    "kind": "preprint",
+    "canonical_url": "https://arxiv.org/abs/2104.08663v4",
+    "publisher": "arXiv"
+  },
+  "revision": {
+    "id": "paper.arxiv.2104.08663.v4",
+    "work_id": "paper.arxiv.2104.08663",
+    "version_label": "v4",
+    "identifiers": [
+      {
+        "scheme": "arxiv",
+        "value": "2104.08663v4",
+        "scope": "revision"
+      }
+    ],
+    "first_submitted_on": "2021-04-17",
+    "revised_on": "2021-10-21"
+  },
+  "authors": [
+    {
+      "display_name": "Nandan Thakur",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Nils Reimers",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Andreas Rücklé",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Abhishek Srivastava",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Iryna Gurevych",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    }
+  ],
+  "research_domains": [
+    "information-retrieval",
+    "evaluation"
+  ],
+  "research_method": "benchmark_study",
+  "summary": {
+    "text": "Introduces a collection of retrieval tasks for studying how retrieval methods transfer across datasets and domains.",
+    "origin": "original_editorial_summary",
+    "scope": "Brief description derived from landing-page subject matter; no empirical outcome asserted."
+  },
+  "source_refs": [
+    "source.arxiv.2104.08663.v4"
+  ],
+  "field_evidence": [
+    {
+      "field": "/work/title",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Title",
+      "check_id": "check.arxiv.2104.08663.v4",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/work/identifiers",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Cite as and arXiv-issued DOI",
+      "check_id": "check.arxiv.2104.08663.v4",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/manifestation",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Version-specific landing URL",
+      "check_id": "check.arxiv.2104.08663.v4",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/revision",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Submission history",
+      "check_id": "check.arxiv.2104.08663.v4",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/authors",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Authors",
+      "check_id": "check.arxiv.2104.08663.v4",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/summary/text",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Landing-page subject matter; original summary",
+      "check_id": null,
+      "scope": "original_summary"
+    },
+    {
+      "field": "/research_domains",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Subjects; provisional editorial classification",
+      "check_id": null,
+      "scope": "editorial_classification"
+    },
+    {
+      "field": "/research_method",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "locator": "Abstract scope; provisional editorial classification",
+      "check_id": null,
+      "scope": "editorial_classification"
+    }
+  ],
+  "upstream_refs": [
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "commit": "da3d320e239a6d37a933963230f2eb3643d1d5c4",
+      "path": "research/T6-deployment-operations/evaluation.md",
+      "source_id": "E-Q1"
+    }
+  ],
+  "claims": [],
+  "citation_verification": "metadata_checked",
+  "citation_check_ids": [
+    "check.arxiv.2104.08663.v4"
+  ],
+  "scientific_validity": "not_assessed",
+  "evidence_confidence": "not_assessed",
+  "scientific_review_ids": [],
+  "reproducibility_status": "not_attempted",
+  "experiment_ids": [],
+  "reproduction_review_ids": [],
+  "integrity_status": "not_assessed",
+  "integrity_check_ids": [],
+  "integrity_event_ids": [],
+  "editorial_status": "proposal",
+  "editorial_review_ids": [],
+  "rights_status": "unknown",
+  "rights_decision_ids": [
+    "rights.arxiv.2104.08663.v4"
+  ],
+  "publication_status": "withheld",
+  "publication_fields": [
+    "/work/title",
+    "/work/identifiers",
+    "/manifestation",
+    "/revision",
+    "/authors",
+    "/summary/text",
+    "/research_domains",
+    "/research_method"
+  ],
+  "publication_operations": [
+    "display",
+    "export"
+  ],
+  "publication_receipt_id": null,
+  "limitations": [
+    "The arXiv DOI identifies the arXiv work; no publisher DOI equivalence was verified.",
+    "Author names are transcribed metadata; author entities, affiliations and laboratories remain unresolved.",
+    "Paper scientific validity, independent reproduction and correction/retraction history are not assessed.",
+    "Metadata proposals are withheld from publication pending source-use and independent editorial review."
+  ]
+}

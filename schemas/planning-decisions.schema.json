@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:planning-decisions:v1",
+  "title": "Papers planning decisions v1",
+  "description": "Structural contract only. Semantic IDs, graph, counts and cross-file relationships are checked by validate_plan.py. No scientific or remote verification is implied.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "papers-decisions/v1"
+    },
+    "prepared_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision_role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "affects": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "relation": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "title",
+                "url",
+                "relation"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "remaining_gate": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accepted_by": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "minLength": 1
+              }
+            ]
+          },
+          "acceptance_reference": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uri"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "question",
+          "decision",
+          "alternatives",
+          "status",
+          "decision_role",
+          "rationale",
+          "affects",
+          "evidence",
+          "remaining_gate",
+          "accepted_by",
+          "acceptance_reference"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "prepared_on",
+    "policy",
+    "decisions"
+  ],
+  "additionalProperties": false
+}

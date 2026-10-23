@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:planning-coverage:v1",
+  "title": "Papers planning coverage v1",
+  "description": "Structural contract only. Semantic IDs, graph, counts and cross-file relationships are checked by validate_plan.py. No scientific or remote verification is implied.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "papers-coverage/v1"
+    },
+    "prepared_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dimension": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subject": {
+            "type": "string",
+            "minLength": 1
+          },
+          "work_packages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "enum": [
+              "Planned",
+              "In Progress",
+              "Reviewed"
+            ]
+          },
+          "denominator": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              },
+              "definition": {
+                "type": "string",
+                "minLength": 1
+              },
+              "size": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                ]
+              },
+              "status": {
+                "enum": [
+                  "Not Measured",
+                  "Planning Scope Enumerated",
+                  "Measured"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "unit",
+              "definition",
+              "size",
+              "status",
+              "reason"
+            ],
+            "additionalProperties": false
+          },
+          "completion_evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "dimension",
+          "subject",
+          "work_packages",
+          "scope",
+          "state",
+          "denominator",
+          "completion_evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "entries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dimensions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mapped_work_packages": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "global_denominator": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer",
+              "minimum": 0
+            }
+          ]
+        },
+        "measured_real_literature_coverage": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "entries",
+        "dimensions",
+        "mapped_work_packages",
+        "global_denominator",
+        "measured_real_literature_coverage"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "prepared_on",
+    "policy",
+    "dimensions",
+    "entries",
+    "summary"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "source.arxiv.1803.09010.v8",
+      "url": "https://arxiv.org/abs/1803.09010v8",
+      "publisher": "arXiv",
+      "source_role": "primary_landing_metadata",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "read_primary_landing_page",
+      "content_sha256": null,
+      "public": true,
+      "rights_decision_ids": [
+        "rights.arxiv.1803.09010.v8"
+      ],
+      "limitations": [
+        "Version-specific landing metadata was read; no local full-text capture or content hash is claimed.",
+        "Scientific results, peer-review status, manuscript rights and author identity disambiguation were not assessed. The separately observed arXiv descriptive metadata CC0 basis is recorded in sources/RIGHTS_NOTES.md; internal production-catalog reviews remain pending."
+      ]
+    },
+    {
+      "id": "source.arxiv.2104.08663.v4",
+      "url": "https://arxiv.org/abs/2104.08663v4",
+      "publisher": "arXiv",
+      "source_role": "primary_landing_metadata",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "read_primary_landing_page",
+      "content_sha256": null,
+      "public": true,
+      "rights_decision_ids": [
+        "rights.arxiv.2104.08663.v4"
+      ],
+      "limitations": [
+        "Version-specific landing metadata was read; no local full-text capture or content hash is claimed.",
+        "Scientific results, peer-review status, manuscript rights and author identity disambiguation were not assessed. The separately observed arXiv descriptive metadata CC0 basis is recorded in sources/RIGHTS_NOTES.md; internal production-catalog reviews remain pending."
+      ]
+    },
+    {
+      "id": "source.arxiv.2402.04249.v2",
+      "url": "https://arxiv.org/abs/2402.04249v2",
+      "publisher": "arXiv",
+      "source_role": "primary_landing_metadata",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "read_primary_landing_page",
+      "content_sha256": null,
+      "public": true,
+      "rights_decision_ids": [
+        "rights.arxiv.2402.04249.v2"
+      ],
+      "limitations": [
+        "Version-specific landing metadata was read; no local full-text capture or content hash is claimed.",
+        "Scientific results, peer-review status, manuscript rights and author identity disambiguation were not assessed. The separately observed arXiv descriptive metadata CC0 basis is recorded in sources/RIGHTS_NOTES.md; internal production-catalog reviews remain pending."
+      ]
+    },
+    {
+      "id": "source.arxiv.2405.09673.v2",
+      "url": "https://arxiv.org/abs/2405.09673v2",
+      "publisher": "arXiv",
+      "source_role": "primary_landing_metadata",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "read_primary_landing_page",
+      "content_sha256": null,
+      "public": true,
+      "rights_decision_ids": [
+        "rights.arxiv.2405.09673.v2"
+      ],
+      "limitations": [
+        "Version-specific landing metadata was read; no local full-text capture or content hash is claimed.",
+        "Scientific results, peer-review status, manuscript rights and author identity disambiguation were not assessed. The separately observed arXiv descriptive metadata CC0 basis is recorded in sources/RIGHTS_NOTES.md; internal production-catalog reviews remain pending."
+      ]
+    }
+  ]
+}

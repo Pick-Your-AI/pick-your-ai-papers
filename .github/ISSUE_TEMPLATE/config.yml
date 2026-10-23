@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security or private material
+    url: https://github.com/Pick-Your-AI
+    about: Contact an organization owner privately; do not disclose secrets or private material in an issue.
+  - name: Organization contribution rules
+    url: https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md
+    about: Review access, review and branch rules before contributing.

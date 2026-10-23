@@ -1,0 +1,58 @@
+name: Reconcile declared papers issue relationships
+
+on:
+  push:
+    branches: [contrib/papers-bootstrap/foundation]
+    paths: [planning/issue-map.json]
+
+permissions: {}
+
+concurrency:
+  group: papers-native-relationships-bootstrap
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    if: >-
+      github.repository == 'Pick-Your-AI/pick-your-ai-papers' &&
+      github.repository_id == '1430404173' &&
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/contrib/papers-bootstrap/foundation' &&
+      github.actor == 'CompleteDotTech' &&
+      github.actor_id == '5861166' &&
+      github.triggering_actor == 'CompleteDotTech' &&
+      github.event.sender.login == 'CompleteDotTech' &&
+      github.event.sender.id == 5861166 &&
+      github.event.repository.id == 1430404173 &&
+      github.event.repository.fork == false &&
+      github.event.deleted == false &&
+      github.event.forced == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Check out the exact authorized push
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4; existing organization workflow pin
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Validate the bounded plan and offline safety tests
+        run: |
+          python3 scripts/validate_plan.py
+          python3 -m unittest discover -s tests -p test_native_relations.py -v
+      - name: Apply only missing declared native relationships
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 scripts/reconcile_native_relations.py
+          --apply
+          --root "$GITHUB_WORKSPACE"
+          --report "$RUNNER_TEMP/papers-native-relations-report.json"
+          --max-writes 450
+      - name: Publish the actual checkpoint and readback
+        if: always()
+        run: >-
+          python3 scripts/reconcile_native_relations.py
+          --summarize "$RUNNER_TEMP/papers-native-relations-report.json"

@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:planning-release:v1",
+  "title": "Papers planning release v1",
+  "description": "Structural contract only. Semantic IDs, graph, counts and cross-file relationships are checked by validate_plan.py. No scientific or remote verification is implied.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "papers-release/v1"
+    },
+    "prepared_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_capabilities": {
+      "type": "object",
+      "properties": {
+        "local_planning_artifacts": {
+          "type": "string",
+          "minLength": 1
+        },
+        "remote_repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "remote_project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scientific_catalog": {
+          "type": "string",
+          "minLength": 1
+        },
+        "live_search_engine": {
+          "type": "string",
+          "minLength": 1
+        },
+        "independent_reproductions": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "local_planning_artifacts",
+        "remote_repository",
+        "remote_project",
+        "scientific_catalog",
+        "live_search_engine",
+        "independent_reproductions"
+      ],
+      "additionalProperties": false
+    },
+    "mandatory_for_any_public_literature_release": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "phases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "enum": [
+              "Foundation",
+              "Metadata Pilot",
+              "Evidence Pilot",
+              "Website Handoff",
+              "Maintained Index"
+            ]
+          },
+          "required_packages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "exit_criteria": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "not_claimed": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "receiving_roles": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "name",
+          "required_packages",
+          "exit_criteria",
+          "not_claimed",
+          "receiving_roles"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "capability_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capability": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required_packages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "capability",
+          "required_packages",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "prohibited_shortcuts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "accepted_release": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "accepted_by": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "acceptance_reference": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "format": "uri"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "prepared_on",
+    "state",
+    "current_capabilities",
+    "mandatory_for_any_public_literature_release",
+    "phases",
+    "capability_gates",
+    "prohibited_shortcuts",
+    "accepted_release",
+    "accepted_by",
+    "acceptance_reference"
+  ],
+  "additionalProperties": false
+}

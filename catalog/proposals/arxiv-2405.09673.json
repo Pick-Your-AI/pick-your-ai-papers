@@ -1,0 +1,236 @@
+{
+  "schema_version": "0.1.0",
+  "record_id": "paper.arxiv.2405.09673",
+  "work": {
+    "id": "paper.arxiv.2405.09673",
+    "title": "LoRA Learns Less and Forgets Less",
+    "identifiers": [
+      {
+        "scheme": "arxiv",
+        "value": "2405.09673",
+        "scope": "work"
+      },
+      {
+        "scheme": "doi",
+        "value": "10.48550/arxiv.2405.09673",
+        "scope": "work"
+      }
+    ],
+    "aliases": []
+  },
+  "manifestation": {
+    "id": "manifestation.arxiv.2405.09673",
+    "kind": "preprint",
+    "canonical_url": "https://arxiv.org/abs/2405.09673v2",
+    "publisher": "arXiv"
+  },
+  "revision": {
+    "id": "paper.arxiv.2405.09673.v2",
+    "work_id": "paper.arxiv.2405.09673",
+    "version_label": "v2",
+    "identifiers": [
+      {
+        "scheme": "arxiv",
+        "value": "2405.09673v2",
+        "scope": "revision"
+      }
+    ],
+    "first_submitted_on": "2024-05-15",
+    "revised_on": "2024-09-20"
+  },
+  "authors": [
+    {
+      "display_name": "Dan Biderman",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Jacob Portes",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Jose Javier Gonzalez Ortiz",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Mansheej Paul",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Philip Greengard",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Connor Jennings",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Daniel King",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Sam Havens",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Vitaliy Chiley",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Jonathan Frankle",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "Cody Blakeney",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    },
+    {
+      "display_name": "John P. Cunningham",
+      "entity_id": null,
+      "identity_status": "unresolved",
+      "affiliations": []
+    }
+  ],
+  "research_domains": [
+    "machine-learning",
+    "training-fine-tuning"
+  ],
+  "research_method": "empirical_study",
+  "summary": {
+    "text": "Studies adaptation and retention tradeoffs between low-rank adaptation and full fine-tuning in specified programming and mathematics settings.",
+    "origin": "original_editorial_summary",
+    "scope": "Brief description derived from landing-page subject matter; no empirical outcome asserted."
+  },
+  "source_refs": [
+    "source.arxiv.2405.09673.v2"
+  ],
+  "field_evidence": [
+    {
+      "field": "/work/title",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Title",
+      "check_id": "check.arxiv.2405.09673.v2",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/work/identifiers",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Cite as and arXiv-issued DOI",
+      "check_id": "check.arxiv.2405.09673.v2",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/manifestation",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Version-specific landing URL",
+      "check_id": "check.arxiv.2405.09673.v2",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/revision",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Submission history",
+      "check_id": "check.arxiv.2405.09673.v2",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/authors",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Authors",
+      "check_id": "check.arxiv.2405.09673.v2",
+      "scope": "bibliographic_metadata"
+    },
+    {
+      "field": "/summary/text",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Landing-page subject matter; original summary",
+      "check_id": null,
+      "scope": "original_summary"
+    },
+    {
+      "field": "/research_domains",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Subjects; provisional editorial classification",
+      "check_id": null,
+      "scope": "editorial_classification"
+    },
+    {
+      "field": "/research_method",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "locator": "Abstract scope; provisional editorial classification",
+      "check_id": null,
+      "scope": "editorial_classification"
+    }
+  ],
+  "upstream_refs": [
+    {
+      "repository": "Pick-Your-AI/pick-your-ai-research",
+      "commit": "da3d320e239a6d37a933963230f2eb3643d1d5c4",
+      "path": "research/T5-training-fine-tuning/fine-tuned-model.md",
+      "source_id": "Q2"
+    }
+  ],
+  "claims": [],
+  "citation_verification": "metadata_checked",
+  "citation_check_ids": [
+    "check.arxiv.2405.09673.v2"
+  ],
+  "scientific_validity": "not_assessed",
+  "evidence_confidence": "not_assessed",
+  "scientific_review_ids": [],
+  "reproducibility_status": "not_attempted",
+  "experiment_ids": [],
+  "reproduction_review_ids": [],
+  "integrity_status": "not_assessed",
+  "integrity_check_ids": [],
+  "integrity_event_ids": [],
+  "editorial_status": "proposal",
+  "editorial_review_ids": [],
+  "rights_status": "unknown",
+  "rights_decision_ids": [
+    "rights.arxiv.2405.09673.v2"
+  ],
+  "publication_status": "withheld",
+  "publication_fields": [
+    "/work/title",
+    "/work/identifiers",
+    "/manifestation",
+    "/revision",
+    "/authors",
+    "/summary/text",
+    "/research_domains",
+    "/research_method"
+  ],
+  "publication_operations": [
+    "display",
+    "export"
+  ],
+  "publication_receipt_id": null,
+  "limitations": [
+    "The arXiv DOI identifies the arXiv work; no publisher DOI equivalence was verified.",
+    "Author names are transcribed metadata; author entities, affiliations and laboratories remain unresolved.",
+    "Paper scientific validity, independent reproduction and correction/retraction history are not assessed.",
+    "Metadata proposals are withheld from publication pending source-use and independent editorial review."
+  ]
+}

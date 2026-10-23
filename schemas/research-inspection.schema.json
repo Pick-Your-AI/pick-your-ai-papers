@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:0.1.0:research-inspection",
+  "title": "research-inspection",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "inspected_on": {
+      "type": "string",
+      "minLength": 1,
+      "format": "date"
+    },
+    "time_zone": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "research_commit": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "website_commit": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "sampled_research_file_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sampled_website_file_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "distinct_arxiv_work_ids_in_sample": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "observed_counts": {
+      "type": "object",
+      "properties": {
+        "t1_candidates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "t1_task_tags": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "t1_source_groups": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "market_competitors": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "market_sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "market_cells": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "market_documented": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "market_unknown": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "t1_candidates",
+        "t1_task_tags",
+        "t1_source_groups",
+        "market_competitors",
+        "market_sources",
+        "market_cells",
+        "market_documented",
+        "market_unknown"
+      ],
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "repository": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "blob_sha": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uri"
+          }
+        },
+        "required": [
+          "repository",
+          "path",
+          "blob_sha",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "inspected_on",
+    "time_zone",
+    "method",
+    "research_commit",
+    "website_commit",
+    "sampled_research_file_count",
+    "sampled_website_file_count",
+    "distinct_arxiv_work_ids_in_sample",
+    "observed_counts",
+    "files",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

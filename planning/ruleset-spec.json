@@ -1,0 +1,209 @@
+{
+  "schema_version": "0.1.0",
+  "source_repository": "Pick-Your-AI/pick-your-ai-research",
+  "observed_on": "2026-10-22",
+  "rulesets": [
+    {
+      "name": "Contributor boundary: branches",
+      "target": "branch",
+      "enforcement": "active",
+      "conditions": {
+        "ref_name": {
+          "exclude": [
+            "~DEFAULT_BRANCH",
+            "refs/heads/contrib/**",
+            "refs/heads/contrib/**/*",
+            "refs/heads/dependabot/**",
+            "refs/heads/dependabot/**/*"
+          ],
+          "include": [
+            "~ALL"
+          ]
+        }
+      },
+      "rules": [
+        {
+          "type": "creation"
+        },
+        {
+          "type": "update"
+        },
+        {
+          "type": "deletion"
+        },
+        {
+          "type": "non_fast_forward"
+        }
+      ],
+      "bypass_actors": [
+        {
+          "actor_id": null,
+          "actor_type": "OrganizationAdmin",
+          "bypass_mode": "always"
+        },
+        {
+          "actor_id": 2,
+          "actor_type": "RepositoryRole",
+          "bypass_mode": "always"
+        },
+        {
+          "actor_id": 5,
+          "actor_type": "RepositoryRole",
+          "bypass_mode": "always"
+        }
+      ],
+      "reference_url": "https://github.com/Pick-Your-AI/pick-your-ai-research/rules/25359621",
+      "source_rule_id": 25359621,
+      "team_bypass_policy": "Add only the verified Research Lead Maintainers team ID after the current organization policy and access have been read."
+    },
+    {
+      "name": "Contributor boundary: default branch",
+      "target": "branch",
+      "enforcement": "active",
+      "conditions": {
+        "ref_name": {
+          "exclude": [],
+          "include": [
+            "~DEFAULT_BRANCH"
+          ]
+        }
+      },
+      "rules": [
+        {
+          "type": "update"
+        },
+        {
+          "type": "deletion"
+        },
+        {
+          "type": "non_fast_forward"
+        }
+      ],
+      "bypass_actors": [
+        {
+          "actor_id": null,
+          "actor_type": "OrganizationAdmin",
+          "bypass_mode": "always"
+        },
+        {
+          "actor_id": 2,
+          "actor_type": "RepositoryRole",
+          "bypass_mode": "always"
+        },
+        {
+          "actor_id": 5,
+          "actor_type": "RepositoryRole",
+          "bypass_mode": "always"
+        }
+      ],
+      "reference_url": "https://github.com/Pick-Your-AI/pick-your-ai-research/rules/25359620",
+      "source_rule_id": 25359620,
+      "team_bypass_policy": "Add only the verified Research Lead Maintainers team ID after the current organization policy and access have been read."
+    },
+    {
+      "name": "Contributor boundary: tags",
+      "target": "tag",
+      "enforcement": "active",
+      "conditions": {
+        "ref_name": {
+          "exclude": [],
+          "include": [
+            "~ALL"
+          ]
+        }
+      },
+      "rules": [
+        {
+          "type": "creation"
+        },
+        {
+          "type": "update"
+        },
+        {
+          "type": "deletion"
+        }
+      ],
+      "bypass_actors": [
+        {
+          "actor_id": null,
+          "actor_type": "OrganizationAdmin",
+          "bypass_mode": "always"
+        },
+        {
+          "actor_id": 2,
+          "actor_type": "RepositoryRole",
+          "bypass_mode": "always"
+        },
+        {
+          "actor_id": 5,
+          "actor_type": "RepositoryRole",
+          "bypass_mode": "always"
+        }
+      ],
+      "reference_url": "https://github.com/Pick-Your-AI/pick-your-ai-research/rules/25359624",
+      "source_rule_id": 25359624,
+      "team_bypass_policy": "Add only the verified Research Lead Maintainers team ID after the current organization policy and access have been read."
+    },
+    {
+      "name": "Review required: default branch",
+      "target": "branch",
+      "enforcement": "active",
+      "conditions": {
+        "ref_name": {
+          "exclude": [],
+          "include": [
+            "~DEFAULT_BRANCH"
+          ]
+        }
+      },
+      "rules": [
+        {
+          "type": "pull_request",
+          "parameters": {
+            "required_approving_review_count": 1,
+            "dismiss_stale_reviews_on_push": false,
+            "required_reviewers": [],
+            "require_code_owner_review": false,
+            "dismissal_restriction": {
+              "enabled": false,
+              "allowed_actors": []
+            },
+            "require_last_push_approval": true,
+            "required_review_thread_resolution": false,
+            "require_extra_approval_for_unattributed_changes": true,
+            "allowed_merge_methods": [
+              "merge",
+              "squash",
+              "rebase"
+            ]
+          }
+        },
+        {
+          "type": "required_status_checks",
+          "parameters": {
+            "strict_required_status_checks_policy": false,
+            "do_not_enforce_on_create": false,
+            "required_status_checks": [
+              {
+                "context": "validate",
+                "integration_id": 15368
+              }
+            ]
+          }
+        }
+      ],
+      "bypass_actors": [
+        {
+          "actor_id": null,
+          "actor_type": "OrganizationAdmin",
+          "bypass_mode": "always"
+        }
+      ],
+      "reference_url": "https://github.com/Pick-Your-AI/pick-your-ai-research/rules/25362696",
+      "source_rule_id": 25362696,
+      "team_bypass_policy": "No team bypass for approval.",
+      "required_check_policy": "Require the Papers validation workflow's validate job from GitHub Actions (app 15368) before merging into main."
+    }
+  ],
+  "policy": "No existing ruleset is weakened or replaced. Creation requires current policy readback and team identity verification. No merge or review bypass is performed by setup."
+}

@@ -1,0 +1,43 @@
+name: Research finding or literature candidate
+description: Record a source-linked candidate, finding or unresolved research question.
+body:
+  - type: input
+    id: parent
+    attributes:
+      label: Existing parent and stable identifier
+      description: Link the existing work package; use native parent relationships for independently reviewable outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: User decision, scope and research question
+      description: State the intended outcome, included population, exclusions and existing upstream owner.
+    validations:
+      required: true
+  - type: textarea
+    id: identity
+    attributes:
+      label: Identity and primary evidence
+      description: Give exact source URLs, work/revision/manifestation identifiers, access dates and known uncertainty. Do not paste article text.
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Deliverable and acceptance criteria
+      description: Name the file or contract, independent review, tests, handoff and limitations needed for acceptance.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Source rights and publication state
+      description: Identify exact material/fields and intended operations. Unknown permission remains unknown; a citation is not a grant.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and open questions
+      description: Separate true prerequisites, informational inputs and potential follow-ups. Do not assume an owner has accepted an assignment.

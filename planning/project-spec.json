@@ -1,0 +1,635 @@
+{
+  "schema_version": "0.1.0",
+  "configuration_status": "proposed_not_applied",
+  "repository": "Pick-Your-AI/pick-your-ai-papers",
+  "title": "Pick Your AI — AI Papers & Research Index",
+  "description": "Comprehensive AI academic literature discovery, scholarly metadata, research taxonomy, reproducibility, evidence, knowledge-graph relationships and website publication.",
+  "repository_description": "Source-linked AI literature, methods, authors, labs, scholarly evidence and reproducibility planning for Pick Your AI.",
+  "repository_topics": [
+    "ai",
+    "research",
+    "papers",
+    "scholarly-metadata",
+    "reproducibility",
+    "knowledge-graph"
+  ],
+  "readme": "This Project tracks delivery of the scholarly index. Planning status is separate from a paper's scientific or publication status. Native Assignees and sub-issues are authoritative. A scaffold, metadata check or completed planning record does not establish scientific verification, publication permission or an operating search engine.",
+  "number": null,
+  "url": null,
+  "visibility_for_new_project": "public",
+  "native_fields": [
+    "Title",
+    "Assignees",
+    "Parent issue",
+    "Sub-issues progress"
+  ],
+  "fields": [
+    {
+      "name": "Status",
+      "record_key": "status",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Backlog",
+        "Ready",
+        "In Progress",
+        "In Review",
+        "Blocked",
+        "Done"
+      ]
+    },
+    {
+      "name": "Priority",
+      "record_key": "priority",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    {
+      "name": "Record Type",
+      "record_key": "record_type",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Program",
+        "Epic",
+        "Work Package",
+        "Task"
+      ]
+    },
+    {
+      "name": "Readiness",
+      "record_key": "readiness",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Ready",
+        "Needs Input",
+        "Blocked",
+        "Awaiting Decision"
+      ]
+    },
+    {
+      "name": "Workstream",
+      "record_key": "workstream",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Program",
+        "01 Scope and taxonomy",
+        "02 Source discovery",
+        "03 Identity and citations",
+        "04 Authors and organizations",
+        "05 Scientific domains",
+        "06 Methods and algorithms",
+        "07 Schemas and records",
+        "08 Claims and evidence",
+        "09 Research artifacts",
+        "10 Reproducibility",
+        "11 Publication integrity",
+        "12 History and open questions",
+        "13 Rights and publication",
+        "14 Editorial governance",
+        "15 Pipeline interfaces",
+        "16 Knowledge graph",
+        "17 Website handoff",
+        "18 Coverage and quality",
+        "19 Engineering and security",
+        "20 Release and maintenance"
+      ]
+    },
+    {
+      "name": "Research Domain",
+      "record_key": "research_domain",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Cross-domain",
+        "Learning theory and probabilistic AI",
+        "Symbolic reasoning and planning",
+        "Language, speech and audio",
+        "Vision, graphics and multimodal AI",
+        "Reinforcement learning and robotics",
+        "Scientific AI and structured data",
+        "Human-centered AI and socio-technical research"
+      ]
+    },
+    {
+      "name": "Publication Type",
+      "record_key": "publication_type",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Mixed",
+        "Preprint",
+        "Journal Article",
+        "Conference Paper",
+        "Workshop Paper",
+        "Technical Report",
+        "Thesis",
+        "Book or Chapter",
+        "Survey or Review",
+        "Correction Notice",
+        "Dataset or Software Paper",
+        "Registered Report",
+        "Position or Conceptual Paper"
+      ]
+    },
+    {
+      "name": "Research Method",
+      "record_key": "research_method",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Program coordination",
+        "Policy and taxonomy",
+        "Source capability research",
+        "Identity reconciliation",
+        "Entity resolution",
+        "Literature mapping",
+        "Method synthesis",
+        "Contract design",
+        "Evidence extraction",
+        "Artifact provenance",
+        "Reproducibility assessment",
+        "Editorial status verification",
+        "Historical and conceptual synthesis",
+        "Rights and provenance review",
+        "Editorial review",
+        "Interface and integration design",
+        "Graph modeling",
+        "Consumer contract testing",
+        "Coverage audit",
+        "Engineering verification",
+        "Release and operations review"
+      ]
+    },
+    {
+      "name": "Evidence Confidence",
+      "record_key": "evidence_confidence",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Not Assessed",
+        "Source Inspected",
+        "Corroborated",
+        "Independent Review Accepted",
+        "Conflicting Evidence",
+        "Insufficient Evidence",
+        "Not Applicable"
+      ]
+    },
+    {
+      "name": "Reproducibility Status",
+      "record_key": "reproducibility_status",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Not Assessed",
+        "Not Applicable",
+        "Artifacts Listed",
+        "Protocol Prepared",
+        "Author Rerun Reported",
+        "Independent Attempt Reported",
+        "Independent Reproduction Accepted",
+        "Inconclusive",
+        "Discrepant Result"
+      ]
+    },
+    {
+      "name": "Source Rights Status",
+      "record_key": "source_rights_status",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Unreviewed",
+        "Unknown",
+        "Under Review",
+        "Permitted for Declared Use",
+        "Restricted",
+        "Prohibited",
+        "Expired or Changed",
+        "Not Applicable"
+      ]
+    },
+    {
+      "name": "Citation Verification",
+      "record_key": "citation_verification",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Not Assessed",
+        "Unresolved",
+        "Identity Verified",
+        "Conflicting Metadata",
+        "Unavailable",
+        "Needs Recheck",
+        "Not Applicable"
+      ]
+    },
+    {
+      "name": "Publication Status",
+      "record_key": "publication_status",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Not Applicable",
+        "Unknown",
+        "Preprint",
+        "Submitted",
+        "Accepted",
+        "Published",
+        "Corrected",
+        "Withdrawn",
+        "Retracted",
+        "Expression of Concern"
+      ]
+    },
+    {
+      "name": "Dependency Status",
+      "record_key": "dependency_status",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "No Hard Prerequisites",
+        "Prerequisites Open",
+        "Prerequisites Accepted",
+        "External Dependency Unresolved"
+      ]
+    },
+    {
+      "name": "Effort",
+      "record_key": "effort",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Unestimated",
+        "Small",
+        "Medium",
+        "Large",
+        "Extra Large"
+      ]
+    },
+    {
+      "name": "Release Phase",
+      "record_key": "release_phase",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Foundation",
+        "Metadata Pilot",
+        "Evidence Pilot",
+        "Website Handoff",
+        "Maintained Index"
+      ]
+    },
+    {
+      "name": "Acceptance Status",
+      "record_key": "acceptance_status",
+      "data_type": "SINGLE_SELECT",
+      "options": [
+        "Not Accepted",
+        "Review Requested",
+        "Partially Accepted",
+        "Accepted",
+        "Revision Required",
+        "Deferred by Recorded Decision"
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "Program Overview",
+      "layout": "table",
+      "filter": "record-type:Program",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Sub-issues progress",
+        "Priority",
+        "Record Type",
+        "Release Phase",
+        "Acceptance Status"
+      ],
+      "group_by": [],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Epic and Work-Package Hierarchy",
+      "layout": "table",
+      "filter": "record-type:Epic,\"Work Package\"",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Parent issue",
+        "Sub-issues progress",
+        "Priority",
+        "Record Type",
+        "Readiness",
+        "Workstream"
+      ],
+      "group_by": [
+        "Workstream"
+      ],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Research Domains",
+      "layout": "table",
+      "filter": "",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Research Domain",
+        "Publication Type",
+        "Research Method"
+      ],
+      "group_by": [
+        "Research Domain"
+      ],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Literature Discovery",
+      "layout": "table",
+      "filter": "workstream:\"02 Source discovery\"",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Publication Type",
+        "Source Rights Status",
+        "Citation Verification"
+      ],
+      "group_by": [],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Evidence and Reproducibility",
+      "layout": "table",
+      "filter": "",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Research Method",
+        "Evidence Confidence",
+        "Reproducibility Status"
+      ],
+      "group_by": [
+        "Reproducibility Status"
+      ],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Citation Verification",
+      "layout": "table",
+      "filter": "-citation-verification:\"Identity Verified\"",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Research Domain",
+        "Publication Type",
+        "Citation Verification"
+      ],
+      "group_by": [
+        "Citation Verification"
+      ],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Rights and Publication Review",
+      "layout": "table",
+      "filter": "",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Source Rights Status",
+        "Publication Status",
+        "Acceptance Status"
+      ],
+      "group_by": [
+        "Source Rights Status"
+      ],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "High-Priority Work",
+      "layout": "table",
+      "filter": "priority:P0,P1 -status:Done",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Readiness",
+        "Dependency Status",
+        "Effort"
+      ],
+      "group_by": [],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Blocked Dependencies",
+      "layout": "table",
+      "filter": "dependency-status:\"Prerequisites Open\"",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Parent issue",
+        "Priority",
+        "Record Type",
+        "Readiness",
+        "Dependency Status"
+      ],
+      "group_by": [
+        "Dependency Status"
+      ],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Website Publication Readiness",
+      "layout": "table",
+      "filter": "release-phase:\"Website Handoff\"",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Source Rights Status",
+        "Citation Verification",
+        "Publication Status",
+        "Release Phase",
+        "Acceptance Status"
+      ],
+      "group_by": [],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    },
+    {
+      "name": "Unassigned Work",
+      "layout": "table",
+      "filter": "no:assignee -status:Done",
+      "visible_fields": [
+        "Title",
+        "Assignees",
+        "Status",
+        "Priority",
+        "Record Type",
+        "Readiness",
+        "Workstream",
+        "Effort"
+      ],
+      "group_by": [
+        "Workstream"
+      ],
+      "vertical_group_by": [],
+      "sort_by": [
+        [
+          "Priority",
+          "asc"
+        ],
+        [
+          "Title",
+          "asc"
+        ]
+      ]
+    }
+  ],
+  "readback_requirements": [
+    "Actual Project number and owner",
+    "Field IDs and all options",
+    "Active issue memberships and field values",
+    "Native parents and blockers",
+    "Saved view names, layout, filters, visible columns, grouping and sorting",
+    "Repository team permissions and Project collaborator roles",
+    "Default-branch scaffold and CI at its actual head"
+  ],
+  "publication_status_semantics": "Scholarly publication state, separate from delivery Status and editorial Acceptance Status. Planning Program/Epic/Work Package records use Not Applicable; exact work-version publication facts remain in scholarly records.",
+  "access_policy": {
+    "individual_grants": [],
+    "team_membership_changes": [],
+    "assignee_policy": "Native Assignees only; leave unassigned until ownership is accepted",
+    "new_repository_team_mapping": [
+      {
+        "current_team_name": "Maintainers",
+        "permission": "triage"
+      },
+      {
+        "current_team_name": "Research",
+        "permission": "triage"
+      },
+      {
+        "current_team_name": "Research Lead Maintainers",
+        "permission": "admin"
+      }
+    ],
+    "condition": "Apply only after actual team identities/roles and current organizational policy are read. No team or individual identity is inferred from a slug."
+  }
+}

@@ -1,0 +1,909 @@
+{
+  "schema_version": "0.1.0",
+  "decisions": [
+    {
+      "id": "rights.arxiv.1803.09010.v8",
+      "source_id": "source.arxiv.1803.09010.v8",
+      "artifact_scope": "Production catalog metadata projection and original editorial summary for https://arxiv.org/abs/1803.09010v8",
+      "assessed_on": null,
+      "valid_until": null,
+      "permissions": [
+        {
+          "field": "/work/title",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        }
+      ],
+      "notes": "The arXiv descriptive metadata CC0 basis was observed on 2026-10-22; see sources/RIGHTS_NOTES.md. These unknown decisions mean the internal field-and-use production-catalog review is outstanding, not that the observed metadata license is unknown. No independent approval or article/figure redistribution permission is asserted."
+    },
+    {
+      "id": "rights.arxiv.2104.08663.v4",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "artifact_scope": "Production catalog metadata projection and original editorial summary for https://arxiv.org/abs/2104.08663v4",
+      "assessed_on": null,
+      "valid_until": null,
+      "permissions": [
+        {
+          "field": "/work/title",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        }
+      ],
+      "notes": "The arXiv descriptive metadata CC0 basis was observed on 2026-10-22; see sources/RIGHTS_NOTES.md. These unknown decisions mean the internal field-and-use production-catalog review is outstanding, not that the observed metadata license is unknown. No independent approval or article/figure redistribution permission is asserted."
+    },
+    {
+      "id": "rights.arxiv.2402.04249.v2",
+      "source_id": "source.arxiv.2402.04249.v2",
+      "artifact_scope": "Production catalog metadata projection and original editorial summary for https://arxiv.org/abs/2402.04249v2",
+      "assessed_on": null,
+      "valid_until": null,
+      "permissions": [
+        {
+          "field": "/work/title",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        }
+      ],
+      "notes": "The arXiv descriptive metadata CC0 basis was observed on 2026-10-22; see sources/RIGHTS_NOTES.md. These unknown decisions mean the internal field-and-use production-catalog review is outstanding, not that the observed metadata license is unknown. No independent approval or article/figure redistribution permission is asserted."
+    },
+    {
+      "id": "rights.arxiv.2405.09673.v2",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "artifact_scope": "Production catalog metadata projection and original editorial summary for https://arxiv.org/abs/2405.09673v2",
+      "assessed_on": null,
+      "valid_until": null,
+      "permissions": [
+        {
+          "field": "/work/title",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/title",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/work/identifiers",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/manifestation",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/revision",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/authors",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/summary/text",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_domains",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "display",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "export",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        },
+        {
+          "field": "/research_method",
+          "operation": "redistribute",
+          "decision": "unknown",
+          "evidence_refs": [],
+          "review_id": null,
+          "conditions": [],
+          "conditions_satisfied": false
+        }
+      ],
+      "notes": "The arXiv descriptive metadata CC0 basis was observed on 2026-10-22; see sources/RIGHTS_NOTES.md. These unknown decisions mean the internal field-and-use production-catalog review is outstanding, not that the observed metadata license is unknown. No independent approval or article/figure redistribution permission is asserted."
+    }
+  ]
+}

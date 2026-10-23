@@ -1,0 +1,416 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:0.1.0:research-evidence",
+  "title": "research-evidence",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "bibliographic_metadata",
+              "integrity_notice"
+            ]
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "revision_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "checked_on": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          "checker_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "read_primary_landing_page",
+              "read_authoritative_notice"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "matched",
+              "unresolved",
+              "mismatch"
+            ]
+          },
+          "observations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "observed_relations": {
+            "description": "Exact graph relationships this check directly observed in its checked revision. A metadata_checked edge other than has_revision/has_manifestation is supported only by a matched check listing its exact subject, predicate and object.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "subject",
+                "predicate",
+                "object"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "subject": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z][a-z0-9_.:-]*$"
+                },
+                "predicate": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "object": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z][a-z0-9_.:-]*$"
+                }
+              }
+            },
+            "uniqueItems": true
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          },
+          "observed_fields_sha256": {
+            "description": "SHA256 of canonical JSON mapping each observation pointer to its currently checked stored value; null only for unresolved/mismatch checks.",
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "source_id",
+          "revision_id",
+          "checked_on",
+          "checker_id",
+          "method",
+          "status",
+          "observations",
+          "scope",
+          "notes",
+          "observed_fields_sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "editorial",
+              "rights",
+              "scientific",
+              "integrity",
+              "reproduction"
+            ]
+          },
+          "target_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "reviewer_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "author_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "independent": {
+            "type": "boolean"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected",
+              "needs_input"
+            ]
+          },
+          "reviewed_on": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "uniqueItems": true
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "description": "review_scope_sha256(kind, target_id, documents) binds the target and materially related record/source/rights/check/run/event/graph objects. Review objects are excluded; their IDs are retained in target content. Any change requires a newly scoped review."
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "target_id",
+          "reviewer_id",
+          "author_id",
+          "independent",
+          "decision",
+          "reviewed_on",
+          "source_refs",
+          "evidence_refs",
+          "scope",
+          "notes",
+          "target_sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "experiments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "record_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "revision_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "protocol_url": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uri"
+          },
+          "code_revision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dataset_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "model_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "environment_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "results_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "artifact_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "format": "uri"
+            },
+            "minItems": 1
+          },
+          "executor_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "independent_from_authors": {
+            "type": "boolean"
+          },
+          "actual_execution": {
+            "type": "boolean"
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "record_id",
+          "revision_id",
+          "protocol_url",
+          "code_revision",
+          "dataset_refs",
+          "model_refs",
+          "environment_sha256",
+          "results_sha256",
+          "artifact_urls",
+          "executor_id",
+          "independent_from_authors",
+          "actual_execution",
+          "source_refs",
+          "limitations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "publication_receipts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "record_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "record_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "release_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "artifact_url": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uri"
+          },
+          "published_on": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          "review_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "record_id",
+          "record_sha256",
+          "release_id",
+          "artifact_url",
+          "published_on",
+          "review_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "checks",
+    "reviews",
+    "experiments",
+    "publication_receipts"
+  ],
+  "additionalProperties": false
+}

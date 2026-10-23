@@ -1,0 +1,88 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "id": "check.arxiv.1803.09010.v8",
+      "kind": "bibliographic_metadata",
+      "source_id": "source.arxiv.1803.09010.v8",
+      "revision_id": "paper.arxiv.1803.09010.v8",
+      "checked_on": "2026-10-22",
+      "checker_id": "assistant:papers-bootstrap-metadata-audit",
+      "method": "read_primary_landing_page",
+      "status": "matched",
+      "observations": [
+        "/work/title",
+        "/work/identifiers",
+        "/manifestation",
+        "/revision",
+        "/authors"
+      ],
+      "scope": "Exact arXiv revision identifier, title, ordered author names, first submission and revision dates, and arXiv-issued DOI.",
+      "notes": "A source metadata check, not an independent scientific review, retraction investigation, rights assessment or reproduction.",
+      "observed_fields_sha256": "7f649267e1b3cf80937882f654a9c23b8c8983d1b0cd45d200b125717503ce8e"
+    },
+    {
+      "id": "check.arxiv.2104.08663.v4",
+      "kind": "bibliographic_metadata",
+      "source_id": "source.arxiv.2104.08663.v4",
+      "revision_id": "paper.arxiv.2104.08663.v4",
+      "checked_on": "2026-10-22",
+      "checker_id": "assistant:papers-bootstrap-metadata-audit",
+      "method": "read_primary_landing_page",
+      "status": "matched",
+      "observations": [
+        "/work/title",
+        "/work/identifiers",
+        "/manifestation",
+        "/revision",
+        "/authors"
+      ],
+      "scope": "Exact arXiv revision identifier, title, ordered author names, first submission and revision dates, and arXiv-issued DOI.",
+      "notes": "A source metadata check, not an independent scientific review, retraction investigation, rights assessment or reproduction.",
+      "observed_fields_sha256": "1a351a3e6139d8bacb2d31df29ed84b0cbf7c855825fdc50acf41ebda0171e73"
+    },
+    {
+      "id": "check.arxiv.2402.04249.v2",
+      "kind": "bibliographic_metadata",
+      "source_id": "source.arxiv.2402.04249.v2",
+      "revision_id": "paper.arxiv.2402.04249.v2",
+      "checked_on": "2026-10-22",
+      "checker_id": "assistant:papers-bootstrap-metadata-audit",
+      "method": "read_primary_landing_page",
+      "status": "matched",
+      "observations": [
+        "/work/title",
+        "/work/identifiers",
+        "/manifestation",
+        "/revision",
+        "/authors"
+      ],
+      "scope": "Exact arXiv revision identifier, title, ordered author names, first submission and revision dates, and arXiv-issued DOI.",
+      "notes": "A source metadata check, not an independent scientific review, retraction investigation, rights assessment or reproduction.",
+      "observed_fields_sha256": "b7505ed897c1e7cadb24bcbe5c507551fe818c58cf3b0f85a148dec1d8333547"
+    },
+    {
+      "id": "check.arxiv.2405.09673.v2",
+      "kind": "bibliographic_metadata",
+      "source_id": "source.arxiv.2405.09673.v2",
+      "revision_id": "paper.arxiv.2405.09673.v2",
+      "checked_on": "2026-10-22",
+      "checker_id": "assistant:papers-bootstrap-metadata-audit",
+      "method": "read_primary_landing_page",
+      "status": "matched",
+      "observations": [
+        "/work/title",
+        "/work/identifiers",
+        "/manifestation",
+        "/revision",
+        "/authors"
+      ],
+      "scope": "Exact arXiv revision identifier, title, ordered author names, first submission and revision dates, and arXiv-issued DOI.",
+      "notes": "A source metadata check, not an independent scientific review, retraction investigation, rights assessment or reproduction.",
+      "observed_fields_sha256": "ed5b57a48babfdc7f25dc683961e0b6471460177b138046add00f9b581be946f"
+    }
+  ],
+  "reviews": [],
+  "experiments": [],
+  "publication_receipts": []
+}
