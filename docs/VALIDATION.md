@@ -23,12 +23,12 @@ Local validation of the correction (Python 3.14; hosted CI uses 3.12):
 
 Hosted CI on the pushed head is the authoritative result.
 
-At 13:35 UTC, four active repository rulesets and the team grants were applied and read back:
+On 2026-10-23, four active repository rulesets and the team grants were applied and read back:
 
-- **Rulesets:** default-branch boundary, branch boundary, tag boundary, and review required. The review ruleset requires one approval, approval of the latest push and the `validate` check, with no bypass.
+- **Rulesets:** the four in [ruleset-spec.json](../planning/ruleset-spec.json). The boundary rulesets include the Research Lead Maintainers bypass. The review ruleset requires one approval, approval of the latest push and the `validate` check from GitHub Actions; only organization admins can bypass it, per organization policy.
 - **Team grants:** Maintainers and Research triage, Research Maintainers write, Research Lead Maintainers admin.
 
-These supersede the earlier Confirm access observation. They do not constitute independent approval.
+This change adds the required `validate` check to the spec. `verify_github.py` reads back all four rulesets as matching the baseline. These supersede the earlier Confirm access observation. They do not constitute independent approval.
 
 The temporary [publisher run](https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/runs/39900496348) concluded **failure** after its final issue inventory comparison; it is not reported as a passing validation run. Its prior writes were independently reconciled and all 165 issues were found exact. No cause is asserted for the earlier collection mismatch. Actual resource verification is recorded separately from that workflow conclusion.
 
