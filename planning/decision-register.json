@@ -1,0 +1,598 @@
+{
+  "schema_version": "papers-decisions/v1",
+  "prepared_on": "2026-10-22",
+  "policy": "An engineering baseline is a documented preparation decision, not evidence of a different-account approval, legal clearance, team appointment or accepting owner.",
+  "decisions": [
+    {
+      "id": "PAPER-DEC-001",
+      "question": "How should the incomplete pasted epic list be completed?",
+      "decision": "Retain all eight supplied Epic 01 packages and four supplied Epic 02 names; complete 02.05 as Conference and venue metadata. Infer the remaining 20-epic, 144-package scope from the explicit mission, existing standards and scientific-directory boundaries.",
+      "alternatives": [
+        "Stop after the truncated 02.05 list",
+        "Treat unseen epic text as if it had been supplied"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-01.01",
+        "PAPER-02.05",
+        "PAPER-20.07"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "The inferred scope is explicitly labeled and can be revised through ordinary reviewed planning changes; no missing user text is claimed.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-002",
+      "question": "What belongs in this repository?",
+      "decision": "Own scholarly identities, metadata, original summaries, qualified claims and literature graph contracts. Link existing model, dataset, benchmark, pipeline and website owners.",
+      "alternatives": [
+        "Duplicate technical component catalogs",
+        "Build a separate website and ingestion platform"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-01.02",
+        "PAPER-09.07",
+        "PAPER-15.01",
+        "PAPER-17.01"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-003",
+      "question": "What is the hierarchy and tracking model?",
+      "decision": "Create native Program/Epic/Work Package issues for independently reviewable outcomes; keep 432 tasks and 864 subtasks as nested checklists. Stable PAPER identifiers are separate from actual GitHub numbers.",
+      "alternatives": [
+        "Create a native issue for every small subtask",
+        "Use checkbox links as a substitute for native parent relations"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-19.01",
+        "PAPER-19.06"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-004",
+      "question": "How is ownership represented?",
+      "decision": "Native GitHub Assignees are authoritative; initial work stays unassigned until accepted. Preserve existing team access policy and actual maintainer authority.",
+      "alternatives": [
+        "Assign all visible members by implication",
+        "Create a custom Owner field and override existing teams"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-01.08",
+        "PAPER-14.01",
+        "PAPER-19.01"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-005",
+      "question": "Can scientific status be inferred from planning progress?",
+      "decision": "Keep work Status/Readiness/Acceptance separate from citation, reproduction, source-rights and publication states. Aggregate planning records use Publication Status Not Applicable.",
+      "alternatives": [
+        "Treat Done as verified scientific truth",
+        "Treat source inspection as independent reproduction"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-01.06",
+        "PAPER-07.01",
+        "PAPER-10.01"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-006",
+      "question": "Which content is safe to commit initially?",
+      "decision": "Use original planning, scholarly metadata proposals and permitted links. Exclude copied abstracts/figures/full text, private datasets, weights and credentials unless a specific future use is separately cleared.",
+      "alternatives": [
+        "Assume open access permits redistribution",
+        "Apply the repository license to all third-party source material"
+      ],
+      "status": "Policy Baseline Adopted; Per-source Decisions Pending",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-13.01",
+        "PAPER-13.02",
+        "PAPER-13.03"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-007",
+      "question": "How should publication eligibility work?",
+      "decision": "Fail closed per source, field, use and exact review revision. Preserve unknowns and admit only the reviewed subset.",
+      "alternatives": [
+        "Publish all schema-valid proposals",
+        "Grant whole-file permission from one approved field"
+      ],
+      "status": "Policy Baseline Adopted; Record Admission Pending",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-13.04",
+        "PAPER-15.06"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-008",
+      "question": "What identifier architecture should be used?",
+      "decision": "Separate work, manifestation, revision and artifact identities; preserve raw external IDs, merge/split history and exact evidence provenance.",
+      "alternatives": [
+        "Use titles as globally unique keys",
+        "Overwrite preprints with later journal versions"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-03.01",
+        "PAPER-03.02",
+        "PAPER-03.05"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-009",
+      "question": "How broad is the scientific coverage target?",
+      "decision": "Use multiple domain/task/method/modality dimensions beyond LLMs and maintain bounded coverage universes with unknown global denominator.",
+      "alternatives": [
+        "Declare global completeness from an arXiv feed",
+        "Restrict all research to language-model stack components"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-01.05",
+        "PAPER-01.07",
+        "PAPER-18.01"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-010",
+      "question": "What counts as independent reproduction?",
+      "decision": "Require actual independent execution receipts, pinned inputs, environment, protocol and comparison evidence; represent author reruns and unavailable attempts separately.",
+      "alternatives": [
+        "Use available code as proof",
+        "Copy published scores into reproduction records"
+      ],
+      "status": "Method Baseline Adopted; Real Reproduction Evidence Absent",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-10.01",
+        "PAPER-10.04",
+        "PAPER-10.07"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-011",
+      "question": "How are corrections and contested claims handled?",
+      "decision": "Use exact-version official notices, scope-specific impact analysis, qualified public notices and auditable appeals.",
+      "alternatives": [
+        "Delete all affected history",
+        "Infer misconduct from a withdrawal or unsuccessful reproduction"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-11.03",
+        "PAPER-11.04",
+        "PAPER-11.06"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-012",
+      "question": "How are literature contracts related to builder contract v1?",
+      "decision": "Use separate versioned literature schemas and explicit receiving contracts. Propose shared-contract changes through existing research #40 authority.",
+      "alternatives": [
+        "Patch generated builder schemas directly",
+        "Force scholarly entities into model/component kinds"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-07.06",
+        "PAPER-09.07",
+        "PAPER-17.03"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-013",
+      "question": "Which database and query runtime should operate the graph?",
+      "decision": "Keep a portable typed JSON graph contract and query acceptance scenarios now; defer production storage/runtime selection until measured workload and accepted operator evidence exist.",
+      "alternatives": [
+        "Select a graph database without workload evidence",
+        "Claim JSON files already constitute a live search service"
+      ],
+      "status": "Awaiting Measured Runtime Decision",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-16.01",
+        "PAPER-16.07",
+        "PAPER-20.06"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-014",
+      "question": "What does this foundation release establish?",
+      "decision": "Planning, schemas, offline checks and reviewable setup assets only. Remote resource creation, hosted CI, admitted records and public operation require independent actual readback.",
+      "alternatives": [
+        "Treat the local scaffold as completed GitHub setup",
+        "Mark all research packages complete after generating issues"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-20.01",
+        "PAPER-20.02",
+        "PAPER-20.04"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-015",
+      "question": "Should maintenance schedules or paid compute be activated during setup?",
+      "decision": "Document proposed cadences and resource needs; activate only when separately requested/authorized and technically available, with actual receipts.",
+      "alternatives": [
+        "Create unrequested recurring automations",
+        "Run paid reproductions to make the setup look complete"
+      ],
+      "status": "Operational Activation Pending",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-10.02",
+        "PAPER-20.05",
+        "PAPER-20.06"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    },
+    {
+      "id": "PAPER-DEC-016",
+      "question": "What is the website and mobile boundary?",
+      "decision": "Provide versioned literature projections and receiving tests to the existing website. Mobile adoption follows accepted shared contracts rather than cloned issue sets.",
+      "alternatives": [
+        "Implement a second web application here",
+        "Clone all literature tasks into mobile repositories"
+      ],
+      "status": "Engineering Baseline Adopted",
+      "decision_role": "Program maintainer and affected receiving owner",
+      "rationale": "Preserve traceability, existing ownership and explicit unknowns while providing a concrete implementation/research foundation.",
+      "affects": [
+        "PAPER-17.01",
+        "PAPER-17.07",
+        "PAPER-09.07"
+      ],
+      "evidence": [
+        {
+          "title": "Parent coverage audit #509",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/issues/509",
+          "relation": "Authorized literature-index scope and adjacent ownership"
+        },
+        {
+          "title": "Organization contribution policy",
+          "url": "https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md",
+          "relation": "Team access, branch and independent review requirements"
+        },
+        {
+          "title": "Canonical research method",
+          "url": "https://github.com/Pick-Your-AI/pick-your-ai-research/blob/main/docs/RESEARCH_METHOD.md",
+          "relation": "Cross-domain evidence policy; remains owned by research"
+        }
+      ],
+      "remaining_gate": "Independent organizational/receiving acceptance remains separate from preparation.",
+      "accepted_by": null,
+      "acceptance_reference": null
+    }
+  ]
+}

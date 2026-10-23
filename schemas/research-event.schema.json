@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:0.1.0:research-event",
+  "title": "research-event",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "correction",
+              "withdrawal",
+              "retraction",
+              "expression_of_concern"
+            ]
+          },
+          "work_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "revision_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "announced_on": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "handling_review_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z][a-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "work_id",
+          "revision_ids",
+          "announced_on",
+          "source_id",
+          "locator",
+          "handling_review_id",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "events"
+  ],
+  "additionalProperties": false
+}

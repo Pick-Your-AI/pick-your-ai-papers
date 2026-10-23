@@ -1,0 +1,221 @@
+{
+  "schema_version": "papers-release/v1",
+  "prepared_on": "2026-10-22",
+  "state": "Foundation Prepared; Remote Setup and Research Acceptance Unverified",
+  "current_capabilities": {
+    "local_planning_artifacts": "Prepared; verify with offline commands at the exact revision.",
+    "remote_repository": "Read planning/github-receipt.json; not inferred from these files.",
+    "remote_project": "Read planning/github-receipt.json; no Project number presumed.",
+    "scientific_catalog": "No admitted scientific catalog is established by this release.",
+    "live_search_engine": "Not established.",
+    "independent_reproductions": "No execution results claimed."
+  },
+  "mandatory_for_any_public_literature_release": [
+    "PAPER-01.06",
+    "PAPER-01.07",
+    "PAPER-03.06",
+    "PAPER-07.06",
+    "PAPER-13.04",
+    "PAPER-13.07",
+    "PAPER-14.02",
+    "PAPER-15.06",
+    "PAPER-17.06",
+    "PAPER-19.04"
+  ],
+  "phases": [
+    {
+      "name": "Foundation",
+      "required_packages": [
+        "PAPER-19.01",
+        "PAPER-19.02",
+        "PAPER-19.03",
+        "PAPER-19.05",
+        "PAPER-19.06",
+        "PAPER-20.01"
+      ],
+      "exit_criteria": [
+        "Exact source revision passes offline validation and meaningful negative tests.",
+        "Actual repository, Project fields/views/items and native graph have complete verified readback; any missing remote setup requirement keeps this phase unaccepted.",
+        "Independent source review and organizational approval boundaries remain accurately recorded."
+      ],
+      "not_claimed": [
+        "An operating search engine",
+        "A verified scientific catalog",
+        "Completion of future research outcomes"
+      ],
+      "receiving_roles": [
+        "Repository maintainer",
+        "Program scope reviewer"
+      ]
+    },
+    {
+      "name": "Metadata Pilot",
+      "required_packages": [
+        "PAPER-02.10",
+        "PAPER-03.06",
+        "PAPER-13.04",
+        "PAPER-18.01",
+        "PAPER-20.02"
+      ],
+      "exit_criteria": [
+        "A bounded real candidate cohort has a dated denominator and exclusion log.",
+        "Every admitted field has exact-version source, rights and editorial evidence.",
+        "Unknowns, conflicts, inaccessible sources and rejected records remain visible."
+      ],
+      "not_claimed": [
+        "Global literature completeness",
+        "Scientific correctness of indexed claims"
+      ],
+      "receiving_roles": [
+        "Citation reviewer",
+        "Source rights reviewer",
+        "Editorial reviewer"
+      ]
+    },
+    {
+      "name": "Evidence Pilot",
+      "required_packages": [
+        "PAPER-08.06",
+        "PAPER-10.07",
+        "PAPER-11.03",
+        "PAPER-16.03",
+        "PAPER-20.03"
+      ],
+      "exit_criteria": [
+        "Claim summaries preserve study context and contradictory evidence.",
+        "Any reproduction label resolves to actual independent execution receipts.",
+        "Corrections and graph provenance are verified for the selected pilot."
+      ],
+      "not_claimed": [
+        "Universal reproducibility",
+        "A consensus ranking of methods"
+      ],
+      "receiving_roles": [
+        "Scientific evidence reviewer",
+        "Reproduction reviewer",
+        "Publication integrity editor"
+      ]
+    },
+    {
+      "name": "Website Handoff",
+      "required_packages": [
+        "PAPER-15.07",
+        "PAPER-17.02",
+        "PAPER-17.03",
+        "PAPER-17.05",
+        "PAPER-17.06",
+        "PAPER-17.07",
+        "PAPER-20.04"
+      ],
+      "exit_criteria": [
+        "Exact admitted snapshot and consumer revision pass actual receiving tests.",
+        "Source, rights, uncertainty and correction states remain visible in public journeys.",
+        "Website owner accepts publication and records actual deployment/readback separately."
+      ],
+      "not_claimed": [
+        "Deployment from local fixtures alone",
+        "Unaccepted mobile integration"
+      ],
+      "receiving_roles": [
+        "Website receiving owner",
+        "Source rights reviewer",
+        "Release authority"
+      ]
+    },
+    {
+      "name": "Maintained Index",
+      "required_packages": [
+        "PAPER-11.07",
+        "PAPER-14.07",
+        "PAPER-18.07",
+        "PAPER-19.07",
+        "PAPER-20.05",
+        "PAPER-20.06",
+        "PAPER-20.07"
+      ],
+      "exit_criteria": [
+        "Actual stewardship, refresh, correction and recovery receipts exist.",
+        "Coverage gaps and unresolved resource/operator decisions remain transparent.",
+        "Every in-scope package has acceptance or an explicit reviewed scope change."
+      ],
+      "not_claimed": [
+        "Permanent scientific completeness",
+        "Automatically authorized paid operations or outreach"
+      ],
+      "receiving_roles": [
+        "Accepted editorial steward",
+        "Pipeline and website operators",
+        "Program maintainer"
+      ]
+    }
+  ],
+  "capability_gates": [
+    {
+      "capability": "Metadata display",
+      "required_packages": [
+        "PAPER-03.06",
+        "PAPER-13.04",
+        "PAPER-20.02"
+      ],
+      "evidence": [
+        "Field-level citation and rights receipts",
+        "Exact admitted projection and reviewer disposition"
+      ]
+    },
+    {
+      "capability": "Original claim summaries",
+      "required_packages": [
+        "PAPER-08.06",
+        "PAPER-13.03",
+        "PAPER-14.02"
+      ],
+      "evidence": [
+        "Exact paper revision and claim locator",
+        "Independent review of scope and limitations"
+      ]
+    },
+    {
+      "capability": "Independent reproduction labels",
+      "required_packages": [
+        "PAPER-10.04",
+        "PAPER-10.07"
+      ],
+      "evidence": [
+        "Actual independent run receipt",
+        "Accepted protocol, environment and observed result comparison"
+      ]
+    },
+    {
+      "capability": "Graph discovery and export",
+      "required_packages": [
+        "PAPER-16.03",
+        "PAPER-16.05",
+        "PAPER-13.07"
+      ],
+      "evidence": [
+        "Typed graph validation and provenance paths",
+        "Required notices and accepted public projection"
+      ]
+    },
+    {
+      "capability": "Website publication",
+      "required_packages": [
+        "PAPER-17.07",
+        "PAPER-20.04"
+      ],
+      "evidence": [
+        "Actual consumer receiving test and deployed revision readback",
+        "Accepted release authority and current rights conditions"
+      ]
+    }
+  ],
+  "prohibited_shortcuts": [
+    "No fabricated citations, papers, scientific findings, reproduction results or permissions.",
+    "No copied restricted article content, figures, manuscripts or private datasets.",
+    "No status reset or assignee invention from the versioned planning baseline.",
+    "No launch, live-automation or hosted-CI claim without actual execution evidence."
+  ],
+  "accepted_release": null,
+  "accepted_by": null,
+  "acceptance_reference": null
+}

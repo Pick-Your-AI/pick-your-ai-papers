@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:0.1.0:graph-edge",
+  "title": "graph-edge",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "scholarly_work",
+              "manifestation",
+              "revision",
+              "person",
+              "organization",
+              "method",
+              "dataset",
+              "benchmark",
+              "model",
+              "code_release",
+              "claim",
+              "experiment",
+              "reproduction",
+              "research_question",
+              "integrity_notice"
+            ]
+          },
+          "record_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z][a-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "external_ref": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "repository": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^Pick-Your-AI/[a-z0-9.-]+$"
+                  },
+                  "commit": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[0-9a-f]{40}$"
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source_id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "repository",
+                  "commit",
+                  "path",
+                  "source_id"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "record_id",
+          "external_ref"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "subject": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "predicate": {
+            "type": "string",
+            "enum": [
+              "has_revision",
+              "has_manifestation",
+              "authored_by",
+              "affiliated_with",
+              "introduces_method",
+              "uses_dataset",
+              "evaluated_on",
+              "releases_model",
+              "releases_code",
+              "cites",
+              "supports",
+              "contradicts",
+              "reproduces",
+              "corrects",
+              "withdraws",
+              "retracts",
+              "raises_question"
+            ]
+          },
+          "object": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assertion_level": {
+            "type": "string",
+            "enum": [
+              "source_asserted",
+              "metadata_checked",
+              "reviewed"
+            ]
+          },
+          "check_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "uniqueItems": true
+          },
+          "review_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "subject",
+          "predicate",
+          "object",
+          "source_refs",
+          "locator",
+          "assertion_level",
+          "check_ids",
+          "review_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "nodes",
+    "edges"
+  ],
+  "additionalProperties": false,
+  "description": "Integrity edges originate at an integrity_notice node whose id resolves to a sourced event, and target an affected revision. Reviewed scientific edges bind review target digests to the exact edge plus dependent evidence."
+}

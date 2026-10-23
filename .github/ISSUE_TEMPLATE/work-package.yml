@@ -1,0 +1,40 @@
+name: Independently reviewable work package
+description: Propose a concrete research or implementation outcome within an existing epic.
+body:
+  - type: input
+    id: stable-id
+    attributes:
+      label: Proposed stable ID and parent epic
+      description: Check the planning register before selecting a PAPER identifier. Actual issue numbers are assigned by GitHub.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome and user decision
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Included scope, exclusions and technical owner boundaries
+    validations:
+      required: true
+  - type: textarea
+    id: delivery
+    attributes:
+      label: Deliverables, tasks and acceptance criteria
+      description: Small steps may be nested checklists. Do not repeat native child issues as checkboxes.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Readiness, prerequisites, evidence and receiving handoffs
+    validations:
+      required: true
+  - type: textarea
+    id: ownership
+    attributes:
+      label: Required expertise and unresolved decisions
+      description: Describe the role needed. Native Assignees record accepted ownership; this form grants no access or assignment.

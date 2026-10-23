@@ -1,0 +1,2079 @@
+{
+  "schema_version": "papers-coverage/v1",
+  "prepared_on": "2026-10-22",
+  "policy": "Near-exhaustive is a research objective. Coverage is measured only against explicit dated source/domain cohorts, never an assumed global universe.",
+  "dimensions": [
+    "Workstream",
+    "Research Domain",
+    "Publication Type",
+    "Research Object",
+    "Source Family",
+    "Research Method",
+    "Qualification and Failure State"
+  ],
+  "entries": [
+    {
+      "id": "PAPER-COV-001",
+      "dimension": "Workstream",
+      "subject": "Program Scope and Scientific Taxonomy",
+      "work_packages": [
+        "PAPER-01.01",
+        "PAPER-01.02",
+        "PAPER-01.03",
+        "PAPER-01.04",
+        "PAPER-01.05",
+        "PAPER-01.06",
+        "PAPER-01.07",
+        "PAPER-01.08"
+      ],
+      "scope": "Define a bounded, auditable literature-index mission and its scientific classifications.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 8,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-002",
+      "dimension": "Workstream",
+      "subject": "Scholarly Discovery and Source Integration",
+      "work_packages": [
+        "PAPER-02.01",
+        "PAPER-02.02",
+        "PAPER-02.03",
+        "PAPER-02.04",
+        "PAPER-02.05",
+        "PAPER-02.06",
+        "PAPER-02.07",
+        "PAPER-02.08",
+        "PAPER-02.09",
+        "PAPER-02.10"
+      ],
+      "scope": "Qualify diverse literature discovery sources and their bounded acquisition interfaces.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 10,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-003",
+      "dimension": "Workstream",
+      "subject": "Work Identity, Citations and Version Lineage",
+      "work_packages": [
+        "PAPER-03.01",
+        "PAPER-03.02",
+        "PAPER-03.03",
+        "PAPER-03.04",
+        "PAPER-03.05",
+        "PAPER-03.06",
+        "PAPER-03.07"
+      ],
+      "scope": "Resolve scholarly identity without losing conflicting provenance or revision history.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-004",
+      "dimension": "Workstream",
+      "subject": "Authors, Research Organizations and Collaborations",
+      "work_packages": [
+        "PAPER-04.01",
+        "PAPER-04.02",
+        "PAPER-04.03",
+        "PAPER-04.04",
+        "PAPER-04.05",
+        "PAPER-04.06",
+        "PAPER-04.07"
+      ],
+      "scope": "Represent scholarly contributors and affiliations without inferring private identity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-005",
+      "dimension": "Workstream",
+      "subject": "AI Research Domains and Scientific Coverage",
+      "work_packages": [
+        "PAPER-05.01",
+        "PAPER-05.02",
+        "PAPER-05.03",
+        "PAPER-05.04",
+        "PAPER-05.05",
+        "PAPER-05.06",
+        "PAPER-05.07"
+      ],
+      "scope": "Maintain broad domain coverage without equating all AI research with current LLM work.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-006",
+      "dimension": "Workstream",
+      "subject": "Methods, Architectures and Algorithm Lineage",
+      "work_packages": [
+        "PAPER-06.01",
+        "PAPER-06.02",
+        "PAPER-06.03",
+        "PAPER-06.04",
+        "PAPER-06.05",
+        "PAPER-06.06",
+        "PAPER-06.07"
+      ],
+      "scope": "Index scientific methods and their attributed development without duplicating model catalogs.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-007",
+      "dimension": "Workstream",
+      "subject": "Research Object and Evidence Schemas",
+      "work_packages": [
+        "PAPER-07.01",
+        "PAPER-07.02",
+        "PAPER-07.03",
+        "PAPER-07.04",
+        "PAPER-07.05",
+        "PAPER-07.06",
+        "PAPER-07.07"
+      ],
+      "scope": "Establish versioned scholarly data contracts that preserve provenance and uncertainty.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-008",
+      "dimension": "Workstream",
+      "subject": "Experimental Claims and Scientific Evidence",
+      "work_packages": [
+        "PAPER-08.01",
+        "PAPER-08.02",
+        "PAPER-08.03",
+        "PAPER-08.04",
+        "PAPER-08.05",
+        "PAPER-08.06",
+        "PAPER-08.07"
+      ],
+      "scope": "Capture reported findings faithfully and assess comparison conditions without inventing validation.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-009",
+      "dimension": "Workstream",
+      "subject": "Datasets, Models, Code and Benchmark Linkages",
+      "work_packages": [
+        "PAPER-09.01",
+        "PAPER-09.02",
+        "PAPER-09.03",
+        "PAPER-09.04",
+        "PAPER-09.05",
+        "PAPER-09.06",
+        "PAPER-09.07"
+      ],
+      "scope": "Link papers to exact external research artifacts while preserving their technical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-010",
+      "dimension": "Workstream",
+      "subject": "Reproducibility and Independent Validation",
+      "work_packages": [
+        "PAPER-10.01",
+        "PAPER-10.02",
+        "PAPER-10.03",
+        "PAPER-10.04",
+        "PAPER-10.05",
+        "PAPER-10.06",
+        "PAPER-10.07"
+      ],
+      "scope": "Plan reproducibility evidence that distinguishes reruns, reproductions, replications and reviews.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-011",
+      "dimension": "Workstream",
+      "subject": "Corrections, Withdrawals and Retractions",
+      "work_packages": [
+        "PAPER-11.01",
+        "PAPER-11.02",
+        "PAPER-11.03",
+        "PAPER-11.04",
+        "PAPER-11.05",
+        "PAPER-11.06",
+        "PAPER-11.07"
+      ],
+      "scope": "Maintain precise publication-status events without making unsupported misconduct judgments.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-012",
+      "dimension": "Workstream",
+      "subject": "Research History and Open Questions",
+      "work_packages": [
+        "PAPER-12.01",
+        "PAPER-12.02",
+        "PAPER-12.03",
+        "PAPER-12.04",
+        "PAPER-12.05",
+        "PAPER-12.06",
+        "PAPER-12.07"
+      ],
+      "scope": "Provide attributed historical context and unresolved questions without overstating consensus.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-013",
+      "dimension": "Workstream",
+      "subject": "Publication Rights and Responsible Source Use",
+      "work_packages": [
+        "PAPER-13.01",
+        "PAPER-13.02",
+        "PAPER-13.03",
+        "PAPER-13.04",
+        "PAPER-13.05",
+        "PAPER-13.06",
+        "PAPER-13.07"
+      ],
+      "scope": "Admit only explicitly permitted fields and original summaries with auditable restrictions.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-014",
+      "dimension": "Workstream",
+      "subject": "Editorial Governance and Community Contribution",
+      "work_packages": [
+        "PAPER-14.01",
+        "PAPER-14.02",
+        "PAPER-14.03",
+        "PAPER-14.04",
+        "PAPER-14.05",
+        "PAPER-14.06",
+        "PAPER-14.07"
+      ],
+      "scope": "Create a reviewable scholarly editorial process with conflicts, corrections and quality controls.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-015",
+      "dimension": "Workstream",
+      "subject": "Ingestion Interfaces and Catalog Pipeline Coordination",
+      "work_packages": [
+        "PAPER-15.01",
+        "PAPER-15.02",
+        "PAPER-15.03",
+        "PAPER-15.04",
+        "PAPER-15.05",
+        "PAPER-15.06",
+        "PAPER-15.07"
+      ],
+      "scope": "Define literature-specific acquisition contracts while shared pipeline runtime remains separately owned.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-016",
+      "dimension": "Workstream",
+      "subject": "Scholarly Knowledge Graph, Queries and Exports",
+      "work_packages": [
+        "PAPER-16.01",
+        "PAPER-16.02",
+        "PAPER-16.03",
+        "PAPER-16.04",
+        "PAPER-16.05",
+        "PAPER-16.06",
+        "PAPER-16.07"
+      ],
+      "scope": "Build a traceable graph contract with qualified relationships and deterministic projections.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-017",
+      "dimension": "Workstream",
+      "subject": "Website Discovery and Consumer Integration",
+      "work_packages": [
+        "PAPER-17.01",
+        "PAPER-17.02",
+        "PAPER-17.03",
+        "PAPER-17.04",
+        "PAPER-17.05",
+        "PAPER-17.06",
+        "PAPER-17.07"
+      ],
+      "scope": "Deliver accepted literature data contracts and content requirements to the existing website.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-018",
+      "dimension": "Workstream",
+      "subject": "Coverage Measurement, Bias and Quality Monitoring",
+      "work_packages": [
+        "PAPER-18.01",
+        "PAPER-18.02",
+        "PAPER-18.03",
+        "PAPER-18.04",
+        "PAPER-18.05",
+        "PAPER-18.06",
+        "PAPER-18.07"
+      ],
+      "scope": "Measure bounded literature coverage and quality without claiming an exhaustive scientific universe.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-019",
+      "dimension": "Workstream",
+      "subject": "Repository Engineering, Validation and Security",
+      "work_packages": [
+        "PAPER-19.01",
+        "PAPER-19.02",
+        "PAPER-19.03",
+        "PAPER-19.04",
+        "PAPER-19.05",
+        "PAPER-19.06",
+        "PAPER-19.07"
+      ],
+      "scope": "Provide reproducible local validation, safe contribution infrastructure and honest execution evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-020",
+      "dimension": "Workstream",
+      "subject": "Pilot Release, Maintenance and Program Stewardship",
+      "work_packages": [
+        "PAPER-20.01",
+        "PAPER-20.02",
+        "PAPER-20.03",
+        "PAPER-20.04",
+        "PAPER-20.05",
+        "PAPER-20.06",
+        "PAPER-20.07"
+      ],
+      "scope": "Advance from honest foundation to reviewed metadata pilots and maintained publication only with evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "independently reviewable work packages",
+        "definition": "The explicitly enumerated planned work packages in this workstream at the current baseline revision.",
+        "size": 7,
+        "status": "Planning Scope Enumerated",
+        "reason": "Known planning scope only; this count is not a measured literature population or completed research outcome."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-021",
+      "dimension": "Research Domain",
+      "subject": "Learning theory and optimization",
+      "work_packages": [
+        "PAPER-05.01",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-022",
+      "dimension": "Research Domain",
+      "subject": "Bayesian and probabilistic AI",
+      "work_packages": [
+        "PAPER-05.01",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-023",
+      "dimension": "Research Domain",
+      "subject": "Symbolic reasoning and automated theorem proving",
+      "work_packages": [
+        "PAPER-05.02",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-024",
+      "dimension": "Research Domain",
+      "subject": "Search, planning and constraint solving",
+      "work_packages": [
+        "PAPER-05.02",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-025",
+      "dimension": "Research Domain",
+      "subject": "Natural language processing and language models",
+      "work_packages": [
+        "PAPER-05.03",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-026",
+      "dimension": "Research Domain",
+      "subject": "Speech, music and auditory intelligence",
+      "work_packages": [
+        "PAPER-05.03",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-027",
+      "dimension": "Research Domain",
+      "subject": "Low-resource and multilingual AI",
+      "work_packages": [
+        "PAPER-05.03",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-028",
+      "dimension": "Research Domain",
+      "subject": "Computer vision and perception",
+      "work_packages": [
+        "PAPER-05.04",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-029",
+      "dimension": "Research Domain",
+      "subject": "Graphics, geometry, video and 3D",
+      "work_packages": [
+        "PAPER-05.04",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-030",
+      "dimension": "Research Domain",
+      "subject": "Multimodal grounding and generation",
+      "work_packages": [
+        "PAPER-05.04",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-031",
+      "dimension": "Research Domain",
+      "subject": "Reinforcement learning and control",
+      "work_packages": [
+        "PAPER-05.05",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-032",
+      "dimension": "Research Domain",
+      "subject": "Robotics and embodied intelligence",
+      "work_packages": [
+        "PAPER-05.05",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-033",
+      "dimension": "Research Domain",
+      "subject": "Multi-agent systems and simulation",
+      "work_packages": [
+        "PAPER-05.05",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-034",
+      "dimension": "Research Domain",
+      "subject": "Scientific discovery and materials",
+      "work_packages": [
+        "PAPER-05.06",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-035",
+      "dimension": "Research Domain",
+      "subject": "Biomedical and health research",
+      "work_packages": [
+        "PAPER-05.06",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-036",
+      "dimension": "Research Domain",
+      "subject": "Climate, geospatial and environmental AI",
+      "work_packages": [
+        "PAPER-05.06",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-037",
+      "dimension": "Research Domain",
+      "subject": "Time-series and forecasting",
+      "work_packages": [
+        "PAPER-05.06",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-038",
+      "dimension": "Research Domain",
+      "subject": "Tabular and graph learning",
+      "work_packages": [
+        "PAPER-05.06",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-039",
+      "dimension": "Research Domain",
+      "subject": "Interpretability and mechanistic analysis",
+      "work_packages": [
+        "PAPER-05.07",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-040",
+      "dimension": "Research Domain",
+      "subject": "Safety, alignment and robustness",
+      "work_packages": [
+        "PAPER-05.07",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-041",
+      "dimension": "Research Domain",
+      "subject": "Privacy, security and fairness",
+      "work_packages": [
+        "PAPER-05.07",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-042",
+      "dimension": "Research Domain",
+      "subject": "Human-computer interaction and accessibility",
+      "work_packages": [
+        "PAPER-05.07",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-043",
+      "dimension": "Research Domain",
+      "subject": "Social, policy and participatory AI research",
+      "work_packages": [
+        "PAPER-05.07",
+        "PAPER-18.01",
+        "PAPER-18.07"
+      ],
+      "scope": "Literature mapped by explicit task, modality, method and domain; applied capability and domain suitability require separate evidence.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-044",
+      "dimension": "Publication Type",
+      "subject": "Preprint",
+      "work_packages": [
+        "PAPER-02.01",
+        "PAPER-03.03"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-045",
+      "dimension": "Publication Type",
+      "subject": "Journal Article",
+      "work_packages": [
+        "PAPER-02.04",
+        "PAPER-03.03"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-046",
+      "dimension": "Publication Type",
+      "subject": "Conference Paper",
+      "work_packages": [
+        "PAPER-02.05"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-047",
+      "dimension": "Publication Type",
+      "subject": "Workshop or Demonstration Paper",
+      "work_packages": [
+        "PAPER-02.05"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-048",
+      "dimension": "Publication Type",
+      "subject": "Thesis or Dissertation",
+      "work_packages": [
+        "PAPER-02.06"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-049",
+      "dimension": "Publication Type",
+      "subject": "Technical Report",
+      "work_packages": [
+        "PAPER-02.06"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-050",
+      "dimension": "Publication Type",
+      "subject": "Book or Chapter",
+      "work_packages": [
+        "PAPER-12.02"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-051",
+      "dimension": "Publication Type",
+      "subject": "Survey or Review",
+      "work_packages": [
+        "PAPER-12.03"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-052",
+      "dimension": "Publication Type",
+      "subject": "Position or Conceptual Paper",
+      "work_packages": [
+        "PAPER-08.03"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-053",
+      "dimension": "Publication Type",
+      "subject": "Registered Report or Protocol",
+      "work_packages": [
+        "PAPER-09.05"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-054",
+      "dimension": "Publication Type",
+      "subject": "Dataset or Software Paper",
+      "work_packages": [
+        "PAPER-09.01",
+        "PAPER-09.04"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-055",
+      "dimension": "Publication Type",
+      "subject": "Correction or Retraction Notice",
+      "work_packages": [
+        "PAPER-11.01",
+        "PAPER-11.03"
+      ],
+      "scope": "Type describes the scholarly object, not delivery Status or scientific validity.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-056",
+      "dimension": "Research Object",
+      "subject": "Work and publication manifestation",
+      "work_packages": [
+        "PAPER-03.01",
+        "PAPER-07.01"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-057",
+      "dimension": "Research Object",
+      "subject": "Publication revision",
+      "work_packages": [
+        "PAPER-03.03"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-058",
+      "dimension": "Research Object",
+      "subject": "Author",
+      "work_packages": [
+        "PAPER-04.01",
+        "PAPER-07.04"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-059",
+      "dimension": "Research Object",
+      "subject": "Institution, laboratory and consortium",
+      "work_packages": [
+        "PAPER-04.03",
+        "PAPER-07.04"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-060",
+      "dimension": "Research Object",
+      "subject": "Affiliation and collaboration",
+      "work_packages": [
+        "PAPER-04.04",
+        "PAPER-04.05"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-061",
+      "dimension": "Research Object",
+      "subject": "Method, algorithm and architecture",
+      "work_packages": [
+        "PAPER-06.01",
+        "PAPER-06.03"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-062",
+      "dimension": "Research Object",
+      "subject": "Formal theorem or conjecture",
+      "work_packages": [
+        "PAPER-06.02"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-063",
+      "dimension": "Research Object",
+      "subject": "Experimental claim and result",
+      "work_packages": [
+        "PAPER-08.01",
+        "PAPER-07.03"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-064",
+      "dimension": "Research Object",
+      "subject": "Dataset and evaluation corpus",
+      "work_packages": [
+        "PAPER-09.01"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-065",
+      "dimension": "Research Object",
+      "subject": "Benchmark protocol and run",
+      "work_packages": [
+        "PAPER-09.02"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-066",
+      "dimension": "Research Object",
+      "subject": "Released model and checkpoint",
+      "work_packages": [
+        "PAPER-09.03"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-067",
+      "dimension": "Research Object",
+      "subject": "Software and code revision",
+      "work_packages": [
+        "PAPER-09.04"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-068",
+      "dimension": "Research Object",
+      "subject": "Supplement and research protocol",
+      "work_packages": [
+        "PAPER-09.05"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-069",
+      "dimension": "Research Object",
+      "subject": "Reproduction and replication receipt",
+      "work_packages": [
+        "PAPER-10.04"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-070",
+      "dimension": "Research Object",
+      "subject": "Correction/status notice",
+      "work_packages": [
+        "PAPER-11.03"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-071",
+      "dimension": "Research Object",
+      "subject": "Historical milestone",
+      "work_packages": [
+        "PAPER-12.01"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-072",
+      "dimension": "Research Object",
+      "subject": "Open research question",
+      "work_packages": [
+        "PAPER-12.04"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-073",
+      "dimension": "Research Object",
+      "subject": "Citation and provenance assertion",
+      "work_packages": [
+        "PAPER-07.05",
+        "PAPER-16.02"
+      ],
+      "scope": "Typed identity and source-qualified relationships; linked technical objects retain their existing canonical owners.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique typed research objects",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-074",
+      "dimension": "Source Family",
+      "subject": "arXiv and preprint services",
+      "work_packages": [
+        "PAPER-02.01",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-075",
+      "dimension": "Source Family",
+      "subject": "DOI registries and Crossref",
+      "work_packages": [
+        "PAPER-02.02",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-076",
+      "dimension": "Source Family",
+      "subject": "OpenAlex",
+      "work_packages": [
+        "PAPER-02.03",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-077",
+      "dimension": "Source Family",
+      "subject": "Publisher and journal metadata",
+      "work_packages": [
+        "PAPER-02.04",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-078",
+      "dimension": "Source Family",
+      "subject": "Conference proceedings and review platforms",
+      "work_packages": [
+        "PAPER-02.05",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-079",
+      "dimension": "Source Family",
+      "subject": "Institutional repositories and theses",
+      "work_packages": [
+        "PAPER-02.06",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-080",
+      "dimension": "Source Family",
+      "subject": "Discipline-specific and regional indexes",
+      "work_packages": [
+        "PAPER-02.07",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-081",
+      "dimension": "Source Family",
+      "subject": "Additional scholarly aggregators",
+      "work_packages": [
+        "PAPER-02.08",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-082",
+      "dimension": "Source Family",
+      "subject": "Persistent artifact repositories",
+      "work_packages": [
+        "PAPER-09.04",
+        "PAPER-09.05",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-083",
+      "dimension": "Source Family",
+      "subject": "Official correction/status notices",
+      "work_packages": [
+        "PAPER-11.02",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-084",
+      "dimension": "Source Family",
+      "subject": "Existing Pick Your AI research citations",
+      "work_packages": [
+        "PAPER-01.02",
+        "PAPER-03.04",
+        "PAPER-02.10",
+        "PAPER-13.01"
+      ],
+      "scope": "Source capabilities and intended-use rights require dated field-level review before acquisition or publication.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "source/query cohorts",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-085",
+      "dimension": "Research Method",
+      "subject": "Formal or theoretical study",
+      "work_packages": [
+        "PAPER-06.02"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-086",
+      "dimension": "Research Method",
+      "subject": "Controlled experiment",
+      "work_packages": [
+        "PAPER-08.02",
+        "PAPER-08.03"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-087",
+      "dimension": "Research Method",
+      "subject": "Observational or correlational study",
+      "work_packages": [
+        "PAPER-08.03"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-088",
+      "dimension": "Research Method",
+      "subject": "Simulation",
+      "work_packages": [
+        "PAPER-05.05",
+        "PAPER-08.02"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-089",
+      "dimension": "Research Method",
+      "subject": "Qualitative or participatory research",
+      "work_packages": [
+        "PAPER-05.07",
+        "PAPER-08.03"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-090",
+      "dimension": "Research Method",
+      "subject": "Mixed-method study",
+      "work_packages": [
+        "PAPER-08.03"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-091",
+      "dimension": "Research Method",
+      "subject": "Survey and systematic synthesis",
+      "work_packages": [
+        "PAPER-08.07",
+        "PAPER-12.03"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-092",
+      "dimension": "Research Method",
+      "subject": "Reproduction or replication",
+      "work_packages": [
+        "PAPER-10.01",
+        "PAPER-10.04"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-093",
+      "dimension": "Research Method",
+      "subject": "Historical or conceptual analysis",
+      "work_packages": [
+        "PAPER-12.01",
+        "PAPER-12.04"
+      ],
+      "scope": "Method-specific evidence criteria; no universal quantitative score substitutes for review.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "unique eligible scholarly works",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-094",
+      "dimension": "Qualification and Failure State",
+      "subject": "Sparse or unresolved citation",
+      "work_packages": [
+        "PAPER-03.04",
+        "PAPER-03.06"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-095",
+      "dimension": "Qualification and Failure State",
+      "subject": "Conflicting source metadata",
+      "work_packages": [
+        "PAPER-07.02",
+        "PAPER-15.03"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-096",
+      "dimension": "Qualification and Failure State",
+      "subject": "Unknown or prohibited publication rights",
+      "work_packages": [
+        "PAPER-13.01",
+        "PAPER-13.04"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-097",
+      "dimension": "Qualification and Failure State",
+      "subject": "Negative or contradictory findings",
+      "work_packages": [
+        "PAPER-08.05",
+        "PAPER-08.06"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-098",
+      "dimension": "Qualification and Failure State",
+      "subject": "Unavailable artifacts or failed reproduction",
+      "work_packages": [
+        "PAPER-09.06",
+        "PAPER-10.06"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-099",
+      "dimension": "Qualification and Failure State",
+      "subject": "Correction, withdrawal and retraction",
+      "work_packages": [
+        "PAPER-11.01",
+        "PAPER-11.07"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-100",
+      "dimension": "Qualification and Failure State",
+      "subject": "Identity or editorial dispute",
+      "work_packages": [
+        "PAPER-04.07",
+        "PAPER-14.03"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-101",
+      "dimension": "Qualification and Failure State",
+      "subject": "Source loss and stale consumer projection",
+      "work_packages": [
+        "PAPER-15.05",
+        "PAPER-17.06"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    },
+    {
+      "id": "PAPER-COV-102",
+      "dimension": "Qualification and Failure State",
+      "subject": "Synthetic fixture exclusion",
+      "work_packages": [
+        "PAPER-07.07",
+        "PAPER-19.04"
+      ],
+      "scope": "Unresolved and adverse states remain visible, auditable and excluded from inappropriate publication claims.",
+      "state": "Planned",
+      "denominator": {
+        "unit": "defined acceptance scenarios",
+        "definition": "A dated, deduplicated source/query cohort with explicit inclusion, exclusion and missingness rules.",
+        "size": null,
+        "status": "Not Measured",
+        "reason": "This foundation defines scope and work ownership; no bounded real literature population has yet been enumerated and accepted."
+      },
+      "completion_evidence": "Reviewed coverage ledger with exact source/query revisions, counts and exclusions; no global-exhaustiveness claim."
+    }
+  ],
+  "summary": {
+    "entries": 102,
+    "dimensions": 7,
+    "mapped_work_packages": 144,
+    "global_denominator": null,
+    "measured_real_literature_coverage": false
+  }
+}

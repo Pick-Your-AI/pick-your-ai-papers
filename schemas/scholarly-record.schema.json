@@ -1,0 +1,733 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:0.1.0:scholarly-record",
+  "title": "scholarly-record",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9_.:-]*$"
+    },
+    "work": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9_.:-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "scheme": {
+                "type": "string",
+                "enum": [
+                  "arxiv",
+                  "doi",
+                  "openalex",
+                  "pubmed",
+                  "publisher",
+                  "local"
+                ]
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "work",
+                  "revision",
+                  "manifestation"
+                ]
+              }
+            },
+            "required": [
+              "scheme",
+              "value",
+              "scope"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "identifiers",
+        "aliases"
+      ],
+      "additionalProperties": false
+    },
+    "manifestation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9_.:-]*$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "preprint",
+            "conference_paper",
+            "journal_article",
+            "workshop_paper",
+            "thesis",
+            "technical_report",
+            "book_chapter",
+            "dataset_paper",
+            "software_paper"
+          ]
+        },
+        "canonical_url": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "canonical_url",
+        "publisher"
+      ],
+      "additionalProperties": false
+    },
+    "revision": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9_.:-]*$"
+        },
+        "work_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9_.:-]*$"
+        },
+        "version_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "scheme": {
+                "type": "string",
+                "enum": [
+                  "arxiv",
+                  "doi",
+                  "openalex",
+                  "pubmed",
+                  "publisher",
+                  "local"
+                ]
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "work",
+                  "revision",
+                  "manifestation"
+                ]
+              }
+            },
+            "required": [
+              "scheme",
+              "value",
+              "scope"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "first_submitted_on": {
+          "type": "string",
+          "minLength": 1,
+          "format": "date"
+        },
+        "revised_on": {
+          "type": "string",
+          "minLength": 1,
+          "format": "date"
+        }
+      },
+      "required": [
+        "id",
+        "work_id",
+        "version_label",
+        "identifiers",
+        "first_submitted_on",
+        "revised_on"
+      ],
+      "additionalProperties": false
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "display_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "entity_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z][a-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "identity_status": {
+            "type": "string",
+            "enum": [
+              "unresolved",
+              "source_asserted",
+              "reviewed"
+            ]
+          },
+          "affiliations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "organization_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z][a-z0-9_.:-]*$"
+                },
+                "valid_from": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "valid_to": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "source_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[a-z][a-z0-9_.:-]*$"
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "organization_id",
+                "valid_from",
+                "valid_to",
+                "source_refs"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "display_name",
+          "entity_id",
+          "identity_status",
+          "affiliations"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "research_domains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "research_method": {
+      "type": "string",
+      "enum": [
+        "methodology_proposal",
+        "benchmark_study",
+        "empirical_study",
+        "theoretical_analysis",
+        "systematic_review",
+        "survey",
+        "replication_study",
+        "dataset_construction",
+        "systems_paper",
+        "position_paper",
+        "not_assessed"
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "origin": {
+          "const": "original_editorial_summary"
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "text",
+        "origin",
+        "scope"
+      ],
+      "additionalProperties": false
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "field_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^/"
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "check_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z][a-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "bibliographic_metadata",
+              "original_summary",
+              "editorial_classification",
+              "reported_claim"
+            ]
+          }
+        },
+        "required": [
+          "field",
+          "source_id",
+          "locator",
+          "check_id",
+          "scope"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "upstream_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "repository": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^Pick-Your-AI/[a-z0-9.-]+$"
+          },
+          "commit": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "repository",
+          "commit",
+          "path",
+          "source_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "author_reported",
+              "reviewer_interpretation",
+              "independently_measured"
+            ]
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "experiment_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z][a-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "review_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "uniqueItems": true
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "statement",
+          "origin",
+          "source_id",
+          "locator",
+          "experiment_id",
+          "review_ids",
+          "limitations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "citation_verification": {
+      "type": "string",
+      "enum": [
+        "unresolved",
+        "metadata_checked",
+        "mismatch"
+      ]
+    },
+    "citation_check_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "scientific_validity": {
+      "type": "string",
+      "enum": [
+        "not_assessed",
+        "claims_reviewed",
+        "disputed"
+      ]
+    },
+    "evidence_confidence": {
+      "type": "string",
+      "enum": [
+        "not_assessed",
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "scientific_review_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "reproducibility_status": {
+      "type": "string",
+      "enum": [
+        "not_attempted",
+        "artifacts_reported",
+        "protocol_reviewed",
+        "independent_attempt",
+        "partially_reproduced",
+        "reproduced",
+        "failed_to_reproduce"
+      ]
+    },
+    "experiment_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "reproduction_review_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "integrity_status": {
+      "type": "string",
+      "enum": [
+        "not_assessed",
+        "notices_checked",
+        "notice_present",
+        "withdrawn",
+        "retracted"
+      ]
+    },
+    "integrity_check_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "integrity_event_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "editorial_status": {
+      "type": "string",
+      "enum": [
+        "proposal",
+        "in_review",
+        "accepted",
+        "rejected"
+      ]
+    },
+    "editorial_review_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "rights_status": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "restricted",
+        "denied",
+        "reviewed_for_requested_uses"
+      ]
+    },
+    "rights_decision_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z][a-z0-9_.:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "publication_status": {
+      "type": "string",
+      "enum": [
+        "withheld",
+        "eligible",
+        "published"
+      ]
+    },
+    "publication_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^/"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "publication_operations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "display",
+          "export",
+          "redistribute"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "publication_receipt_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9_.:-]*$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "work",
+    "manifestation",
+    "revision",
+    "authors",
+    "research_domains",
+    "research_method",
+    "summary",
+    "source_refs",
+    "field_evidence",
+    "upstream_refs",
+    "claims",
+    "citation_verification",
+    "citation_check_ids",
+    "scientific_validity",
+    "evidence_confidence",
+    "scientific_review_ids",
+    "reproducibility_status",
+    "experiment_ids",
+    "reproduction_review_ids",
+    "integrity_status",
+    "integrity_check_ids",
+    "integrity_event_ids",
+    "editorial_status",
+    "editorial_review_ids",
+    "rights_status",
+    "rights_decision_ids",
+    "publication_status",
+    "publication_fields",
+    "publication_operations",
+    "publication_receipt_id",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

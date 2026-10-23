@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:0.1.0:research-source",
+  "title": "research-source",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uri"
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_role": {
+            "type": "string",
+            "enum": [
+              "primary_landing_metadata",
+              "publisher_metadata",
+              "authoritative_notice",
+              "terms",
+              "upstream_research",
+              "original_artifact",
+              "independent_assessment"
+            ]
+          },
+          "accessed_on": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          "retrieval_method": {
+            "type": "string",
+            "enum": [
+              "read_primary_landing_page",
+              "read_repository_blob",
+              "manual_review"
+            ]
+          },
+          "content_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "public": {
+            "const": true
+          },
+          "rights_decision_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z][a-z0-9_.:-]*$"
+            },
+            "uniqueItems": true
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "url",
+          "publisher",
+          "source_role",
+          "accessed_on",
+          "retrieval_method",
+          "content_sha256",
+          "public",
+          "rights_decision_ids",
+          "limitations"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "sources"
+  ],
+  "additionalProperties": false
+}

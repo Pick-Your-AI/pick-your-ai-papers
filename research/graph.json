@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.1.0",
+  "nodes": [
+    {
+      "id": "paper.arxiv.1803.09010",
+      "kind": "scholarly_work",
+      "record_id": "paper.arxiv.1803.09010",
+      "external_ref": null
+    },
+    {
+      "id": "manifestation.arxiv.1803.09010",
+      "kind": "manifestation",
+      "record_id": "paper.arxiv.1803.09010",
+      "external_ref": null
+    },
+    {
+      "id": "paper.arxiv.1803.09010.v8",
+      "kind": "revision",
+      "record_id": "paper.arxiv.1803.09010",
+      "external_ref": null
+    },
+    {
+      "id": "paper.arxiv.2104.08663",
+      "kind": "scholarly_work",
+      "record_id": "paper.arxiv.2104.08663",
+      "external_ref": null
+    },
+    {
+      "id": "manifestation.arxiv.2104.08663",
+      "kind": "manifestation",
+      "record_id": "paper.arxiv.2104.08663",
+      "external_ref": null
+    },
+    {
+      "id": "paper.arxiv.2104.08663.v4",
+      "kind": "revision",
+      "record_id": "paper.arxiv.2104.08663",
+      "external_ref": null
+    },
+    {
+      "id": "paper.arxiv.2402.04249",
+      "kind": "scholarly_work",
+      "record_id": "paper.arxiv.2402.04249",
+      "external_ref": null
+    },
+    {
+      "id": "manifestation.arxiv.2402.04249",
+      "kind": "manifestation",
+      "record_id": "paper.arxiv.2402.04249",
+      "external_ref": null
+    },
+    {
+      "id": "paper.arxiv.2402.04249.v2",
+      "kind": "revision",
+      "record_id": "paper.arxiv.2402.04249",
+      "external_ref": null
+    },
+    {
+      "id": "paper.arxiv.2405.09673",
+      "kind": "scholarly_work",
+      "record_id": "paper.arxiv.2405.09673",
+      "external_ref": null
+    },
+    {
+      "id": "manifestation.arxiv.2405.09673",
+      "kind": "manifestation",
+      "record_id": "paper.arxiv.2405.09673",
+      "external_ref": null
+    },
+    {
+      "id": "paper.arxiv.2405.09673.v2",
+      "kind": "revision",
+      "record_id": "paper.arxiv.2405.09673",
+      "external_ref": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.1803.09010.has_revision",
+      "subject": "paper.arxiv.1803.09010",
+      "predicate": "has_revision",
+      "object": "paper.arxiv.1803.09010.v8",
+      "source_refs": [
+        "source.arxiv.1803.09010.v8"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.1803.09010.v8"
+      ],
+      "review_ids": []
+    },
+    {
+      "id": "edge.1803.09010.has_manifestation",
+      "subject": "paper.arxiv.1803.09010",
+      "predicate": "has_manifestation",
+      "object": "manifestation.arxiv.1803.09010",
+      "source_refs": [
+        "source.arxiv.1803.09010.v8"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.1803.09010.v8"
+      ],
+      "review_ids": []
+    },
+    {
+      "id": "edge.2104.08663.has_revision",
+      "subject": "paper.arxiv.2104.08663",
+      "predicate": "has_revision",
+      "object": "paper.arxiv.2104.08663.v4",
+      "source_refs": [
+        "source.arxiv.2104.08663.v4"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.2104.08663.v4"
+      ],
+      "review_ids": []
+    },
+    {
+      "id": "edge.2104.08663.has_manifestation",
+      "subject": "paper.arxiv.2104.08663",
+      "predicate": "has_manifestation",
+      "object": "manifestation.arxiv.2104.08663",
+      "source_refs": [
+        "source.arxiv.2104.08663.v4"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.2104.08663.v4"
+      ],
+      "review_ids": []
+    },
+    {
+      "id": "edge.2402.04249.has_revision",
+      "subject": "paper.arxiv.2402.04249",
+      "predicate": "has_revision",
+      "object": "paper.arxiv.2402.04249.v2",
+      "source_refs": [
+        "source.arxiv.2402.04249.v2"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.2402.04249.v2"
+      ],
+      "review_ids": []
+    },
+    {
+      "id": "edge.2402.04249.has_manifestation",
+      "subject": "paper.arxiv.2402.04249",
+      "predicate": "has_manifestation",
+      "object": "manifestation.arxiv.2402.04249",
+      "source_refs": [
+        "source.arxiv.2402.04249.v2"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.2402.04249.v2"
+      ],
+      "review_ids": []
+    },
+    {
+      "id": "edge.2405.09673.has_revision",
+      "subject": "paper.arxiv.2405.09673",
+      "predicate": "has_revision",
+      "object": "paper.arxiv.2405.09673.v2",
+      "source_refs": [
+        "source.arxiv.2405.09673.v2"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.2405.09673.v2"
+      ],
+      "review_ids": []
+    },
+    {
+      "id": "edge.2405.09673.has_manifestation",
+      "subject": "paper.arxiv.2405.09673",
+      "predicate": "has_manifestation",
+      "object": "manifestation.arxiv.2405.09673",
+      "source_refs": [
+        "source.arxiv.2405.09673.v2"
+      ],
+      "locator": "Version-specific arXiv landing metadata and submission history",
+      "assertion_level": "metadata_checked",
+      "check_ids": [
+        "check.arxiv.2405.09673.v2"
+      ],
+      "review_ids": []
+    }
+  ]
+}

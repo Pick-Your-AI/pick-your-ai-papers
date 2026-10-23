@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pick-your-ai:papers:0.1.0:source-rights",
+  "title": "source-rights",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "artifact_scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assessed_on": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "valid_until": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^/"
+                },
+                "operation": {
+                  "type": "string",
+                  "enum": [
+                    "retrieve",
+                    "display",
+                    "export",
+                    "redistribute"
+                  ]
+                },
+                "decision": {
+                  "type": "string",
+                  "enum": [
+                    "unknown",
+                    "allowed",
+                    "denied",
+                    "conditional"
+                  ]
+                },
+                "evidence_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[a-z][a-z0-9_.:-]*$"
+                  },
+                  "uniqueItems": true
+                },
+                "review_id": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "^[a-z][a-z0-9_.:-]*$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "conditions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "conditions_satisfied": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "field",
+                "operation",
+                "decision",
+                "evidence_refs",
+                "review_id",
+                "conditions",
+                "conditions_satisfied"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "source_id",
+          "artifact_scope",
+          "assessed_on",
+          "valid_until",
+          "permissions",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "decisions"
+  ],
+  "additionalProperties": false
+}

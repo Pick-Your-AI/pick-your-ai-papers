@@ -1,0 +1,34 @@
+name: Citation, identity, rights or scientific-status correction
+description: Report a precise problem without reproducing restricted or private content.
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Affected record and exact revision
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Correction category
+      options:
+        - Citation or identifier
+        - Author or affiliation identity
+        - Claim or experimental conditions
+        - Publication, correction, withdrawal or retraction event
+        - Source rights or permitted use
+        - Other scoped metadata problem
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary evidence and proposed correction
+      description: Provide public URLs, access dates and the affected assertion. Separate observed evidence from a suspected problem.
+    validations:
+      required: true
+  - type: textarea
+    id: effects
+    attributes:
+      label: Related records and publication impact
+      description: Identify downstream summaries, graph edges, releases and uncertainty. Sensitive details belong in a private report.
