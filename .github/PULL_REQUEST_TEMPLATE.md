@@ -35,3 +35,13 @@ Record commands actually run and their results. Explain any failure or unavailab
 ## Closure review
 
 Confirm that the current PR body, commit messages and linked issues do not accidentally close partial work. Do not pre-check unperformed review.
+
+## Routing context (optional)
+
+<!-- Only for an unresolved decision; reuse information above. See CONTRIBUTING.md,
+Routing decisions. Keep private rosters and security details out of this template. -->
+
+- Decision needed:
+- Current responsible role:
+- Prior disposition:
+- Proposed next recipient:

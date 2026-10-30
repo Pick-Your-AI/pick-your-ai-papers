@@ -38,3 +38,11 @@ body:
     attributes:
       label: Required expertise and unresolved decisions
       description: Describe the role needed. Native Assignees record accepted ownership; this form grants no access or assignment.
+  - type: textarea
+    id: routing_context
+    attributes:
+      label: Routing context (optional)
+      description: Only for an unresolved decision. Reuse answers above; do not include private rosters or security details. See CONTRIBUTING.md, Routing decisions.
+      placeholder: "Decision needed; current responsible role; prior disposition; proposed next recipient."
+    validations:
+      required: false

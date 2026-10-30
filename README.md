@@ -85,3 +85,8 @@ The [organization contribution rules](https://github.com/Pick-Your-AI/.github/bl
 The prepared [bootstrap](scripts/bootstrap_github.py) defaults to a read-only plan. Its explicit apply mode can stage authorized setup when an authenticated administrative path is available, and must preserve independent approval. A scaffold PR may remain awaiting that approval. The [GitHub receipt](planning/github-receipt.json) records actual creation and readback; it must not be filled from intended configuration alone.
 
 Original software and documentation use the [MIT License](LICENSE), consistent with the research repository. That license does not relicense cited articles, third-party metadata, figures, code, or datasets. See [SECURITY.md](SECURITY.md) for private reporting guidance and [publication rights](docs/PUBLICATION_RIGHTS.md) for source-specific boundaries.
+
+## Contributor routing
+
+For a blocked decision, use [the repository routing procedure](CONTRIBUTING.md#routing-decisions).
+Start with the existing issue and its accepted owner; preserve its scope and evidence requirements.
