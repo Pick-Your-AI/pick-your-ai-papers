@@ -32,3 +32,11 @@ body:
     attributes:
       label: Related records and publication impact
       description: Identify downstream summaries, graph edges, releases and uncertainty. Sensitive details belong in a private report.
+  - type: textarea
+    id: routing_context
+    attributes:
+      label: Routing context (optional)
+      description: Only for an unresolved decision. Reuse answers above; do not include private rosters or security details. See CONTRIBUTING.md, Routing decisions.
+      placeholder: "Decision needed; current responsible role; prior disposition; proposed next recipient."
+    validations:
+      required: false

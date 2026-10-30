@@ -37,3 +37,13 @@ Do not edit generated documentation independently of its canonical planning inpu
 Use a focused branch and PR. An agent review is useful analysis but not a different-account GitHub approval. Do not bypass independent review, branch protections, required checks, source-use restrictions or recorded owner holds. Use `Refs` for partial work; inspect PR body, commit messages and linked issues before using a closing directive. Close a parent only after its children, own acceptance and material handoffs are complete.
 
 Read back remote settings, memberships, views, issue relationships and exact default-branch commit before reporting establishment complete. An API success, local receipt, simulated response or repository name is not proof of live configuration. Keep planned, created, submitted, merged, accepted and published distinct.
+
+## Decisions and escalation
+
+For unresolved decisions, follow [CONTRIBUTING.md#routing-decisions](CONTRIBUTING.md#routing-decisions)
+and the [canonical escalation guide](https://github.com/Pick-Your-AI/.github/blob/main/docs/governance/ESCALATION.md).
+Refresh private routing evidence before choosing a recipient. Report unresolved
+roles and failed or stale lookups explicitly; do not infer accepted ownership from
+membership or access. Preserve the existing assignee, local gates and private-reporting
+boundaries. Central links depend on the governance change merging; no automatic
+routing, permission change or recurring job is enabled by these instructions.

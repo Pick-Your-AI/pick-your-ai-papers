@@ -41,3 +41,11 @@ body:
     attributes:
       label: Dependencies and open questions
       description: Separate true prerequisites, informational inputs and potential follow-ups. Do not assume an owner has accepted an assignment.
+  - type: textarea
+    id: routing_context
+    attributes:
+      label: Routing context (optional)
+      description: Only for an unresolved decision. Reuse answers above; do not include private rosters or security details. See CONTRIBUTING.md, Routing decisions.
+      placeholder: "Decision needed; current responsible role; prior disposition; proposed next recipient."
+    validations:
+      required: false
