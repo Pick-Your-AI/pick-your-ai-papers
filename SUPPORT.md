@@ -12,5 +12,6 @@ change merging and a successful private refresh; it does not promise a response
 time or assign an unaccepted owner.
 
 Keep credentials, account details, personal/customer data and confidential reports
-out of public issues. For sensitive security reports, follow [SECURITY.md](SECURITY.md); preserve
-any more specific private support route above.
+out of public issues. For sensitive reports, follow [SECURITY.md](SECURITY.md),
+including its conditional reporting routes; this guidance establishes no new or
+verified private intake.

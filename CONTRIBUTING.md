@@ -96,8 +96,9 @@ team destination and a sanitized decision summary.
 When escalation is needed, include the decision needed, current responsible role,
 prior disposition and proposed next recipient. Reuse information already in the
 issue or PR; routine contributions need no full escalation history. Send nothing
-and change no assignment automatically. Sensitive reports follow the existing
-private security/support process.
+and change no assignment automatically. Sensitive reports follow [SECURITY.md](SECURITY.md),
+including its conditional reporting routes; this guidance establishes no new or
+verified private intake.
 
 The owner-selected scope of [organization issue #14](https://github.com/Pick-Your-AI/.github/issues/14)
 is all changes in Research, Sustainability, Applications, Papers, Catalog Pipeline
