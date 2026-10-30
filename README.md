@@ -1,4 +1,33 @@
+<!-- showcase:banner:start -->
+<p align="center">
+  <img src="docs/images/banner.png" alt="pick-your-ai-papers by Pick Your AI" width="100%">
+</p>
+<!-- showcase:banner:end -->
+
+<!-- showcase:nav:start -->
+**Pick Your AI** · [All repositories](https://github.com/Pick-Your-AI) · [Docs](docs/) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
+<!-- showcase:nav:end -->
+
+<div align="center">
+
 # Pick Your AI — AI Papers & Research Index
+
+<!-- showcase:badges:start -->
+![Language Python](https://img.shields.io/badge/language-Python-115E59)
+![Type Dataset](https://img.shields.io/badge/type-Dataset-0F766E)
+![License MIT](https://img.shields.io/badge/license-MIT-64748B)
+[![CI](https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/workflows/ci.yml/badge.svg)](https://github.com/Pick-Your-AI/pick-your-ai-papers/actions/workflows/ci.yml)
+<!-- showcase:badges:end -->
+
+<!-- showcase:tagline:start -->
+**Source-linked AI literature, methods, authors, labs, scholarly evidence and reproducibility planning for Pick Your AI.**
+<!-- showcase:tagline:end -->
+
+</div>
+
+---
+
+## About
 
 A proposed, source-linked scholarly directory connecting AI literature, authors, laboratories, methods, experimental claims, research artifacts, and corrections to the wider Pick Your AI ecosystem.
 
@@ -10,7 +39,9 @@ Repository team access and rule saves remain blocked by GitHub's **Confirm acces
 
 Four metadata proposals remain withheld from production release. This repository does not operate a research search engine or claim an admitted scholarly catalog or independent reproductions. See [setup](docs/PROJECT_SETUP.md), [validation](docs/VALIDATION.md) and the [execution receipts](planning/github-receipt.json) for evidence and remaining work.
 
-## What this repository owns
+## Notes
+
+### What this repository owns
 
 This repository plans and researches scholarly identities and relationships: works and preprints; exact revisions and publication manifestations; authors and dated affiliations; research organizations; methods and architectures; claim-level evidence; references to datasets, benchmarks, models, and code; independent reproduction assessments; correction and retraction histories; and open research questions.
 
@@ -27,7 +58,7 @@ The four bibliographic seed proposals use arXiv's observed CC0 metadata basis an
 | [pick-your-ai-website](https://github.com/Pick-Your-AI/pick-your-ai-website) | Public interface, search experience, accessibility, SEO, and receiving integration remain in the website repository. |
 | [pick-your-ai-leaderboard](https://github.com/Pick-Your-AI/pick-your-ai-leaderboard) | Contributor recognition remains independent of scientific merit, citation counts, and evidence acceptance. |
 
-## Start here
+### Start here
 
 1. Read the [charter](docs/charter.md), [research method](docs/RESEARCH_METHOD.md), and [publication-rights policy](docs/PUBLICATION_RIGHTS.md).
 2. Find the independently reviewable outcome in the [delivery plan](docs/DELIVERY_PLAN.md) and [rendered backlog](docs/BACKLOG.md). The canonical scope is [planning/project-backlog.json](planning/project-backlog.json).
@@ -35,7 +66,7 @@ The four bibliographic seed proposals use arXiv's observed CC0 metadata basis an
 4. Prepare a note with [templates/research-note.md](templates/research-note.md). Keep incomplete facts and unresolved identities explicit. Submit structured proposals only when their fields are supported.
 5. Run the checks below and follow [CONTRIBUTING.md](CONTRIBUTING.md). Passing checks is structural evidence; scientific review, permissions, and receiving acceptance remain separate.
 
-## Repository map
+### Repository map
 
 | Location | Contents and limits |
 | --- | --- |
@@ -50,7 +81,7 @@ The four bibliographic seed proposals use arXiv's observed CC0 metadata basis an
 | `examples/`, `tests/` | Clearly marked examples and regression fixtures; never real scientific evidence. |
 | `scripts/` | Offline validation, deterministic documentation generation and setup tooling. |
 
-## Local validation
+### Local validation
 
 Use Python 3.12. Validation uses the standard library and needs no package installation:
 
@@ -70,7 +101,7 @@ python3 scripts/validate_research.py --publication
 
 It must reject withheld proposals. Do not weaken a gate or promote a record solely to obtain a passing command. No pilot is approved for public data delivery by this establishment package.
 
-## Delivery and research status
+### Delivery and research status
 
 The plan follows **Program → Epic → Work Package → Task → Subtask**. Independently reviewable program/epic/work-package outcomes become native GitHub issues and sub-issues; small tasks and subtasks are nested checklists. Stable IDs such as `PAPER-01.01.T1.S1` do not encode GitHub issue numbers. Native Assignees determine actual ownership.
 
@@ -78,10 +109,14 @@ The user's supplied enumeration ended during item `02.05`. The rest of the backl
 
 Publication, scientific validity, reproducibility, citation verification, rights, editorial acceptance, and delivery Status are independent. A Done setup issue would not make a paper verified, a source licensed, or the directory complete.
 
-## Governance and license
+### Governance and license
 
 The [organization contribution rules](https://github.com/Pick-Your-AI/.github/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/Pick-Your-AI/.github/blob/main/CODE_OF_CONDUCT.md) apply. Repository access is team-based. No team or individual permission is created by these files. Changes to `main` require the organization's independent GitHub review process.
 
 The prepared [bootstrap](scripts/bootstrap_github.py) defaults to a read-only plan. Its explicit apply mode can stage authorized setup when an authenticated administrative path is available, and must preserve independent approval. A scaffold PR may remain awaiting that approval. The [GitHub receipt](planning/github-receipt.json) records actual creation and readback; it must not be filled from intended configuration alone.
 
 Original software and documentation use the [MIT License](LICENSE), consistent with the research repository. That license does not relicense cited articles, third-party metadata, figures, code, or datasets. See [SECURITY.md](SECURITY.md) for private reporting guidance and [publication rights](docs/PUBLICATION_RIGHTS.md) for source-specific boundaries.
+
+## License
+
+Code and documentation are licensed under the MIT License; see `LICENSE`.
